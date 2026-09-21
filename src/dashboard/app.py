@@ -464,4 +464,3 @@ st.markdown(
 if auto_refresh:
     time.sleep(5)
     st.rerun()
-    
