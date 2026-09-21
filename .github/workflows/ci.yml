@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-and-test:
+    name: Lint & Unit Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install ruff pytest kafka-python python-dotenv faker
+
+      - name: Lint with ruff
+        run: ruff check src/ --ignore E501
+
+      - name: Run rules engine unit tests
+        run: pytest src/processor/tests/test_rules_engine.py -v
+
+  dbt-check:
+    name: dbt Parse Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dbt
+        run: pip install dbt-duckdb
+
+      - name: dbt parse
+        run: |
+          cd dbt_project
+          dbt parse --profiles-dir .

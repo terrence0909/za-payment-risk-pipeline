@@ -5,3 +5,7 @@ za_payment_risk:
       type: duckdb
       path: ../data/za_payments.duckdb
       threads: 4
+    ci:
+      type: duckdb
+      path: ":memory:"
+      threads: 4
