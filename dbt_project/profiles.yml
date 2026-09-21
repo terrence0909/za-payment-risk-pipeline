@@ -1,0 +1,7 @@
+za_payment_risk:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: ../data/za_payments.duckdb
+      threads: 4

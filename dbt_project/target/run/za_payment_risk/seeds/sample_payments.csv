@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "za_payments"."main_raw"."sample_payments" ("transaction_id" text,"timestamp" timestamp without time zone,"processed_at" timestamp without time zone,"bank_code" text,"originator_id" text,"beneficiary_country" text,"swift_bic" text,"amount_zar" integer,"currency" text,"exchange_rate" float8,"amount_foreign" float8,"bop_category_code" integer,"bop_description" text,"ada_ytd_used" integer,"ada_limit" integer,"transaction_purpose" text,"is_resident" boolean,"entity_type" text,"source_system" text,"schema_version" text,"risk_score" integer,"risk_band" text,"compliance_passed" boolean,"requires_sar" boolean,"finsurvreportable" boolean,"violation_count" integer,"warning_count" integer)
+  ;
+    -- dbt seed --
+    
+          COPY "za_payments"."main_raw"."sample_payments" FROM '/Users/tshepotau/za-payment-risk-pipeline/dbt_project/seeds/sample_payments.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

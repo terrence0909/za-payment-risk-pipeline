@@ -1,0 +1,1968 @@
+[0m10:45:22.754894 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10967e8b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a7164c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a7162e0>]}
+
+
+============================== 10:45:22.757534 | 617b35d5-babd-416f-b2c1-d857045c82cd ==============================
+[0m10:45:22.757534 [info ] [MainThread]: Running with dbt=1.10.23
+[0m10:45:22.757884 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'log_cache_events': 'False', 'quiet': 'False', 'no_print': 'None', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'introspect': 'True', 'log_format': 'default', 'warn_error': 'None', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init . --skip-profile-setup', 'static_parser': 'True', 'partial_parse': 'True', 'printer_width': '80', 'log_path': 'logs', 'profiles_dir': '/Users/tshepotau/.dbt', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'None', 'fail_fast': 'False', 'target_path': 'None', 'version_check': 'True'}
+[0m10:45:22.765665 [warn ] [MainThread]: [[33mWARNING[0m]: This version of dbt is deprecated and no longer receives regular patches, including for known bugs. Please upgrade to a newer supported version of dbt for new projects: https://docs.getdbt.com/docs/dbt-versions?utm_source=dbt-cli
+[0m10:45:22.766035 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecated_version_invocation', 'label': '617b35d5-babd-416f-b2c1-d857045c82cd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a7164c0>]}
+[0m10:46:05.846547 [debug] [MainThread]: Starter project path: /Users/tshepotau/Library/Python/3.9/lib/python/site-packages/dbt/include/starter_project
+[0m10:46:05.859308 [info ] [MainThread]: 
+Your new dbt project "za_payment_risk" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:46:05.880419 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 43.171024, "process_in_blocks": "0", "process_kernel_time": 0.123284, "process_mem_max_rss": "119177216", "process_out_blocks": "0", "process_user_time": 1.549469}
+[0m10:46:05.881163 [debug] [MainThread]: Command `dbt init` succeeded at 10:46:05.881005 after 43.17 seconds
+[0m10:46:05.881821 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10967e8b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a6762b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a6e5ac0>]}
+[0m10:46:05.882477 [debug] [MainThread]: Flushing usage events
+[0m10:46:07.010927 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:50:28.345291 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f15100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109f9f610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109f9f430>]}
+
+
+============================== 10:50:28.348397 | 9572248d-3d46-404f-9914-146cf18edb46 ==============================
+[0m10:50:28.348397 [info ] [MainThread]: Running with dbt=1.10.23
+[0m10:50:28.348754 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'introspect': 'True', 'static_parser': 'True', 'partial_parse': 'True', 'fail_fast': 'False', 'log_format': 'default', 'no_print': 'None', 'invocation_command': 'dbt seed --profiles-dir .', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'use_colors': 'True', 'warn_error': 'None', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'debug': 'False', 'log_cache_events': 'False', 'version_check': 'True', 'profiles_dir': '.', 'empty': 'None', 'target_path': 'None', 'cache_selected_only': 'False', 'log_path': '/Users/tshepotau/za-payment-risk-pipeline/dbt_project/logs'}
+[0m10:50:28.349012 [info ] [MainThread]: This version of dbt is deprecated and no longer receives regular patches, including for known bugs. We recommend upgrading to a newer supported version of dbt: https://docs.getdbt.com/docs/dbt-versions
+[0m10:50:28.349230 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecated_version_invocation', 'label': '9572248d-3d46-404f-9914-146cf18edb46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f15100>]}
+[0m10:50:28.581543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9572248d-3d46-404f-9914-146cf18edb46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076b81f0>]}
+[0m10:50:28.615895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9572248d-3d46-404f-9914-146cf18edb46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d36e20>]}
+[0m10:50:28.617526 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m10:50:28.708341 [debug] [MainThread]: checksum: 2b1352ea083ab2415ad0dbf54db2d1ac6054af1cb939f9d756e37438b9e9a7cf, vars: {}, profile: , target: , version: 1.10.23
+[0m10:50:28.708823 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m10:50:28.709074 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9572248d-3d46-404f-9914-146cf18edb46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a08e520>]}
+[0m10:50:29.578119 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values`. Arguments to generic tests
+should be nested under the `arguments` property.`
+[0m10:50:29.578466 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '9572248d-3d46-404f-9914-146cf18edb46', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a955c40>]}
+[0m10:50:29.664317 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.za_payment_risk.intermediate
+[0m10:50:29.672948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9572248d-3d46-404f-9914-146cf18edb46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa96130>]}
+[0m10:50:29.741303 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/manifest.json
+[0m10:50:29.742819 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/semantic_manifest.json
+[0m10:50:29.758372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9572248d-3d46-404f-9914-146cf18edb46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa96a00>]}
+[0m10:50:29.758690 [info ] [MainThread]: Found 3 models, 1 seed, 5 data tests, 1 source, 456 macros
+[0m10:50:29.758915 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9572248d-3d46-404f-9914-146cf18edb46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa96b50>]}
+[0m10:50:29.759702 [info ] [MainThread]: 
+[0m10:50:29.759912 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m10:50:29.760096 [info ] [MainThread]: 
+[0m10:50:29.760405 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m10:50:29.760882 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_za_payments'
+[0m10:50:29.806754 [debug] [ThreadPool]: Using duckdb connection "list_za_payments"
+[0m10:50:29.807051 [debug] [ThreadPool]: On list_za_payments: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "connection_name": "list_za_payments"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"za_payments"'
+    
+  
+  
+[0m10:50:29.807247 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:50:29.822447 [debug] [ThreadPool]: SQL status: OK in 0.015 seconds
+[0m10:50:29.823531 [debug] [ThreadPool]: On list_za_payments: Close
+[0m10:50:29.823914 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_za_payments, now create_za_payments_main_raw)
+[0m10:50:29.824183 [debug] [ThreadPool]: Creating schema "database: "za_payments"
+schema: "main_raw"
+"
+[0m10:50:29.828579 [debug] [ThreadPool]: Using duckdb connection "create_za_payments_main_raw"
+[0m10:50:29.828775 [debug] [ThreadPool]: On create_za_payments_main_raw: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "connection_name": "create_za_payments_main_raw"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='za_payments'
+        and type='sqlite'
+    
+  
+[0m10:50:29.828946 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:50:29.829541 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m10:50:29.830219 [debug] [ThreadPool]: Using duckdb connection "create_za_payments_main_raw"
+[0m10:50:29.830396 [debug] [ThreadPool]: On create_za_payments_main_raw: BEGIN
+[0m10:50:29.830639 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m10:50:29.830810 [debug] [ThreadPool]: Using duckdb connection "create_za_payments_main_raw"
+[0m10:50:29.830984 [debug] [ThreadPool]: On create_za_payments_main_raw: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "connection_name": "create_za_payments_main_raw"} */
+
+    
+    
+        create schema if not exists "za_payments"."main_raw"
+    
+[0m10:50:29.831527 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m10:50:29.832033 [debug] [ThreadPool]: On create_za_payments_main_raw: COMMIT
+[0m10:50:29.832219 [debug] [ThreadPool]: Using duckdb connection "create_za_payments_main_raw"
+[0m10:50:29.832387 [debug] [ThreadPool]: On create_za_payments_main_raw: COMMIT
+[0m10:50:29.833028 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m10:50:29.833209 [debug] [ThreadPool]: On create_za_payments_main_raw: Close
+[0m10:50:29.836446 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_za_payments_main_raw, now list_za_payments_main)
+[0m10:50:29.839906 [debug] [ThreadPool]: Using duckdb connection "list_za_payments_main"
+[0m10:50:29.840176 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_za_payments_main_raw'
+[0m10:50:29.840361 [debug] [ThreadPool]: On list_za_payments_main: BEGIN
+[0m10:50:29.841835 [debug] [ThreadPool]: Using duckdb connection "list_za_payments_main_raw"
+[0m10:50:29.842016 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:50:29.842201 [debug] [ThreadPool]: On list_za_payments_main_raw: BEGIN
+[0m10:50:29.842444 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:50:29.842670 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m10:50:29.842849 [debug] [ThreadPool]: Using duckdb connection "list_za_payments_main"
+[0m10:50:29.843027 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m10:50:29.843210 [debug] [ThreadPool]: On list_za_payments_main: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "connection_name": "list_za_payments_main"} */
+select
+      'za_payments' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'za_payments'
+  
+[0m10:50:29.843399 [debug] [ThreadPool]: Using duckdb connection "list_za_payments_main_raw"
+[0m10:50:29.843640 [debug] [ThreadPool]: On list_za_payments_main_raw: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "connection_name": "list_za_payments_main_raw"} */
+select
+      'za_payments' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_raw'
+    and lower(table_catalog) = 'za_payments'
+  
+[0m10:50:29.852106 [debug] [ThreadPool]: SQL status: OK in 0.009 seconds
+[0m10:50:29.852356 [debug] [ThreadPool]: SQL status: OK in 0.009 seconds
+[0m10:50:29.853001 [debug] [ThreadPool]: On list_za_payments_main: ROLLBACK
+[0m10:50:29.853600 [debug] [ThreadPool]: On list_za_payments_main_raw: ROLLBACK
+[0m10:50:29.855557 [debug] [ThreadPool]: Failed to rollback 'list_za_payments_main'
+[0m10:50:29.855743 [debug] [ThreadPool]: On list_za_payments_main: Close
+[0m10:50:29.855964 [debug] [ThreadPool]: Failed to rollback 'list_za_payments_main_raw'
+[0m10:50:29.856220 [debug] [ThreadPool]: On list_za_payments_main_raw: Close
+[0m10:50:29.856546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9572248d-3d46-404f-9914-146cf18edb46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077d6400>]}
+[0m10:50:29.856851 [debug] [MainThread]: Using duckdb connection "master"
+[0m10:50:29.857027 [debug] [MainThread]: On master: BEGIN
+[0m10:50:29.857188 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:50:29.857454 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m10:50:29.857635 [debug] [MainThread]: On master: COMMIT
+[0m10:50:29.857801 [debug] [MainThread]: Using duckdb connection "master"
+[0m10:50:29.857955 [debug] [MainThread]: On master: COMMIT
+[0m10:50:29.858193 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m10:50:29.858382 [debug] [MainThread]: On master: Close
+[0m10:50:29.862180 [debug] [Thread-1  ]: Began running node seed.za_payment_risk.sample_payments
+[0m10:50:29.862490 [info ] [Thread-1  ]: 1 of 1 START seed file main_raw.sample_payments ................................ [RUN]
+[0m10:50:29.862764 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_za_payments_main, now seed.za_payment_risk.sample_payments)
+[0m10:50:29.862984 [debug] [Thread-1  ]: Began compiling node seed.za_payment_risk.sample_payments
+[0m10:50:29.863184 [debug] [Thread-1  ]: Began executing node seed.za_payment_risk.sample_payments
+[0m10:50:29.883398 [debug] [Thread-1  ]: Using duckdb connection "seed.za_payment_risk.sample_payments"
+[0m10:50:29.883643 [debug] [Thread-1  ]: On seed.za_payment_risk.sample_payments: BEGIN
+[0m10:50:29.883834 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m10:50:29.884174 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m10:50:29.884367 [debug] [Thread-1  ]: Using duckdb connection "seed.za_payment_risk.sample_payments"
+[0m10:50:29.884575 [debug] [Thread-1  ]: On seed.za_payment_risk.sample_payments: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "node_id": "seed.za_payment_risk.sample_payments"} */
+
+    create table "za_payments"."main_raw"."sample_payments" ("transaction_id" text,"timestamp" timestamp without time zone,"processed_at" timestamp without time zone,"bank_code" text,"originator_id" text,"beneficiary_country" text,"swift_bic" text,"amount_zar" integer,"currency" text,"exchange_rate" float8,"amount_foreign" float8,"bop_category_code" integer,"bop_description" text,"ada_ytd_used" integer,"ada_limit" integer,"transaction_purpose" text,"is_resident" boolean,"entity_type" text,"source_system" text,"schema_version" text,"risk_score" integer,"risk_band" text,"compliance_passed" boolean,"requires_sar" boolean,"finsurvreportable" boolean,"violation_count" integer,"warning_count" integer)
+  
+[0m10:50:29.885589 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m10:50:29.892248 [debug] [Thread-1  ]: Using duckdb connection "seed.za_payment_risk.sample_payments"
+[0m10:50:29.892467 [debug] [Thread-1  ]: On seed.za_payment_risk.sample_payments: 
+          COPY "za_payments"."main_raw"."sample_payments" FROM '/Users/tshepotau/za-payment-risk-pipeline/dbt_project/seeds/sample_payments.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m10:50:29.904478 [debug] [Thread-1  ]: SQL status: OK in 0.012 seconds
+[0m10:50:29.907734 [debug] [Thread-1  ]: Writing runtime SQL for node "seed.za_payment_risk.sample_payments"
+[0m10:50:29.915667 [debug] [Thread-1  ]: On seed.za_payment_risk.sample_payments: COMMIT
+[0m10:50:29.915887 [debug] [Thread-1  ]: Using duckdb connection "seed.za_payment_risk.sample_payments"
+[0m10:50:29.916110 [debug] [Thread-1  ]: On seed.za_payment_risk.sample_payments: COMMIT
+[0m10:50:29.916707 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m10:50:29.917784 [debug] [Thread-1  ]: On seed.za_payment_risk.sample_payments: Close
+[0m10:50:29.918847 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9572248d-3d46-404f-9914-146cf18edb46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078975b0>]}
+[0m10:50:29.919162 [info ] [Thread-1  ]: 1 of 1 OK loaded seed file main_raw.sample_payments ............................ [[32mINSERT 8[0m in 0.06s]
+[0m10:50:29.919498 [debug] [Thread-1  ]: Finished running node seed.za_payment_risk.sample_payments
+[0m10:50:29.920159 [debug] [MainThread]: Using duckdb connection "master"
+[0m10:50:29.920365 [debug] [MainThread]: On master: BEGIN
+[0m10:50:29.920548 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m10:50:29.920833 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m10:50:29.921013 [debug] [MainThread]: On master: COMMIT
+[0m10:50:29.921185 [debug] [MainThread]: Using duckdb connection "master"
+[0m10:50:29.921339 [debug] [MainThread]: On master: COMMIT
+[0m10:50:29.921587 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m10:50:29.921802 [debug] [MainThread]: On master: Close
+[0m10:50:29.922034 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:50:29.922192 [debug] [MainThread]: Connection 'seed.za_payment_risk.sample_payments' was properly closed.
+[0m10:50:29.922339 [debug] [MainThread]: Connection 'list_za_payments_main_raw' was properly closed.
+[0m10:50:29.922498 [info ] [MainThread]: 
+[0m10:50:29.922691 [info ] [MainThread]: Finished running 1 seed in 0 hours 0 minutes and 0.16 seconds (0.16s).
+[0m10:50:29.923062 [debug] [MainThread]: Command end result
+[0m10:50:29.937798 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/manifest.json
+[0m10:50:29.938747 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/semantic_manifest.json
+[0m10:50:29.942242 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/run_results.json
+[0m10:50:29.942435 [info ] [MainThread]: 
+[0m10:50:29.942681 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:50:29.942870 [info ] [MainThread]: 
+[0m10:50:29.943076 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m10:50:29.943380 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m10:50:29.944939 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 1.6468304, "process_in_blocks": "0", "process_kernel_time": 0.254552, "process_mem_max_rss": "179044352", "process_out_blocks": "0", "process_user_time": 2.950561}
+[0m10:50:29.945166 [debug] [MainThread]: Command `dbt seed` succeeded at 10:50:29.945125 after 1.65 seconds
+[0m10:50:29.945379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f15100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d36e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109209550>]}
+[0m10:50:29.945585 [debug] [MainThread]: Flushing usage events
+[0m10:50:31.219364 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:50:59.710607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a01b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa9b520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa9b340>]}
+
+
+============================== 10:50:59.713346 | c8a8f3fe-b879-411b-99e0-82b34ca6a4de ==============================
+[0m10:50:59.713346 [info ] [MainThread]: Running with dbt=1.10.23
+[0m10:50:59.713703 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'warn_error': 'None', 'use_experimental_parser': 'False', 'profiles_dir': '.', 'log_cache_events': 'False', 'fail_fast': 'False', 'static_parser': 'True', 'printer_width': '80', 'version_check': 'True', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'use_colors': 'True', 'invocation_command': 'dbt run --profiles-dir .', 'empty': 'False', 'debug': 'False', 'log_path': '/Users/tshepotau/za-payment-risk-pipeline/dbt_project/logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'quiet': 'False', 'introspect': 'True', 'target_path': 'None'}
+[0m10:50:59.713960 [info ] [MainThread]: This version of dbt is deprecated and no longer receives regular patches, including for known bugs. We recommend upgrading to a newer supported version of dbt: https://docs.getdbt.com/docs/dbt-versions
+[0m10:50:59.714174 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecated_version_invocation', 'label': 'c8a8f3fe-b879-411b-99e0-82b34ca6a4de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a01b80>]}
+[0m10:50:59.868219 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c8a8f3fe-b879-411b-99e0-82b34ca6a4de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa58fa0>]}
+[0m10:50:59.902270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c8a8f3fe-b879-411b-99e0-82b34ca6a4de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa4dca0>]}
+[0m10:50:59.904088 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m10:50:59.978409 [debug] [MainThread]: checksum: 2b1352ea083ab2415ad0dbf54db2d1ac6054af1cb939f9d756e37438b9e9a7cf, vars: {}, profile: , target: , version: 1.10.23
+[0m10:51:00.171346 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:51:00.171669 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:51:00.176296 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.za_payment_risk.intermediate
+[0m10:51:00.216347 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c8a8f3fe-b879-411b-99e0-82b34ca6a4de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b04e130>]}
+[0m10:51:00.289631 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/manifest.json
+[0m10:51:00.291058 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/semantic_manifest.json
+[0m10:51:00.302711 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c8a8f3fe-b879-411b-99e0-82b34ca6a4de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b05a880>]}
+[0m10:51:00.303037 [info ] [MainThread]: Found 3 models, 1 seed, 5 data tests, 1 source, 456 macros
+[0m10:51:00.303261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c8a8f3fe-b879-411b-99e0-82b34ca6a4de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b01a490>]}
+[0m10:51:00.304126 [info ] [MainThread]: 
+[0m10:51:00.304348 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m10:51:00.304532 [info ] [MainThread]: 
+[0m10:51:00.304829 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m10:51:00.308029 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_za_payments'
+[0m10:51:00.346831 [debug] [ThreadPool]: Using duckdb connection "list_za_payments"
+[0m10:51:00.347117 [debug] [ThreadPool]: On list_za_payments: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "connection_name": "list_za_payments"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"za_payments"'
+    
+  
+  
+[0m10:51:00.347321 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:51:00.354706 [debug] [ThreadPool]: SQL status: OK in 0.007 seconds
+[0m10:51:00.355464 [debug] [ThreadPool]: On list_za_payments: Close
+[0m10:51:00.355865 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_za_payments, now create_za_payments_main)
+[0m10:51:00.356145 [debug] [ThreadPool]: Creating schema "database: "za_payments"
+schema: "main"
+"
+[0m10:51:00.360693 [debug] [ThreadPool]: Using duckdb connection "create_za_payments_main"
+[0m10:51:00.360905 [debug] [ThreadPool]: On create_za_payments_main: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "connection_name": "create_za_payments_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='za_payments'
+        and type='sqlite'
+    
+  
+[0m10:51:00.361089 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:51:00.361519 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m10:51:00.362218 [debug] [ThreadPool]: Using duckdb connection "create_za_payments_main"
+[0m10:51:00.362406 [debug] [ThreadPool]: On create_za_payments_main: BEGIN
+[0m10:51:00.362667 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m10:51:00.362849 [debug] [ThreadPool]: Using duckdb connection "create_za_payments_main"
+[0m10:51:00.363018 [debug] [ThreadPool]: On create_za_payments_main: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "connection_name": "create_za_payments_main"} */
+
+    
+    
+        create schema if not exists "za_payments"."main"
+    
+[0m10:51:00.363304 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m10:51:00.363753 [debug] [ThreadPool]: On create_za_payments_main: COMMIT
+[0m10:51:00.363930 [debug] [ThreadPool]: Using duckdb connection "create_za_payments_main"
+[0m10:51:00.364094 [debug] [ThreadPool]: On create_za_payments_main: COMMIT
+[0m10:51:00.364320 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m10:51:00.364494 [debug] [ThreadPool]: On create_za_payments_main: Close
+[0m10:51:00.365205 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_za_payments_main, now list_za_payments_main_raw)
+[0m10:51:00.365516 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_za_payments_main'
+[0m10:51:00.369203 [debug] [ThreadPool]: Using duckdb connection "list_za_payments_main_raw"
+[0m10:51:00.370744 [debug] [ThreadPool]: Using duckdb connection "list_za_payments_main"
+[0m10:51:00.370960 [debug] [ThreadPool]: On list_za_payments_main_raw: BEGIN
+[0m10:51:00.371143 [debug] [ThreadPool]: On list_za_payments_main: BEGIN
+[0m10:51:00.371327 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:51:00.371500 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:51:00.371839 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m10:51:00.372074 [debug] [ThreadPool]: Using duckdb connection "list_za_payments_main_raw"
+[0m10:51:00.372268 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m10:51:00.372472 [debug] [ThreadPool]: On list_za_payments_main_raw: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "connection_name": "list_za_payments_main_raw"} */
+select
+      'za_payments' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_raw'
+    and lower(table_catalog) = 'za_payments'
+  
+[0m10:51:00.372672 [debug] [ThreadPool]: Using duckdb connection "list_za_payments_main"
+[0m10:51:00.372945 [debug] [ThreadPool]: On list_za_payments_main: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "connection_name": "list_za_payments_main"} */
+select
+      'za_payments' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'za_payments'
+  
+[0m10:51:00.379245 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m10:51:00.379516 [debug] [ThreadPool]: SQL status: OK in 0.007 seconds
+[0m10:51:00.380175 [debug] [ThreadPool]: On list_za_payments_main: ROLLBACK
+[0m10:51:00.381563 [debug] [ThreadPool]: On list_za_payments_main_raw: ROLLBACK
+[0m10:51:00.382798 [debug] [ThreadPool]: Failed to rollback 'list_za_payments_main'
+[0m10:51:00.383083 [debug] [ThreadPool]: Failed to rollback 'list_za_payments_main_raw'
+[0m10:51:00.383267 [debug] [ThreadPool]: On list_za_payments_main: Close
+[0m10:51:00.383454 [debug] [ThreadPool]: On list_za_payments_main_raw: Close
+[0m10:51:00.384036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c8a8f3fe-b879-411b-99e0-82b34ca6a4de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108444c40>]}
+[0m10:51:00.384336 [debug] [MainThread]: Using duckdb connection "master"
+[0m10:51:00.384534 [debug] [MainThread]: On master: BEGIN
+[0m10:51:00.384702 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:51:00.384999 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m10:51:00.385170 [debug] [MainThread]: On master: COMMIT
+[0m10:51:00.385340 [debug] [MainThread]: Using duckdb connection "master"
+[0m10:51:00.385517 [debug] [MainThread]: On master: COMMIT
+[0m10:51:00.385821 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m10:51:00.386020 [debug] [MainThread]: On master: Close
+[0m10:51:00.387534 [debug] [Thread-1  ]: Began running node model.za_payment_risk.stg_payments
+[0m10:51:00.387848 [info ] [Thread-1  ]: 1 of 3 START sql view model main.stg_payments .................................. [RUN]
+[0m10:51:00.388117 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_za_payments_main_raw, now model.za_payment_risk.stg_payments)
+[0m10:51:00.388334 [debug] [Thread-1  ]: Began compiling node model.za_payment_risk.stg_payments
+[0m10:51:00.393967 [debug] [Thread-1  ]: Writing injected SQL for node "model.za_payment_risk.stg_payments"
+[0m10:51:00.394669 [debug] [Thread-1  ]: Began executing node model.za_payment_risk.stg_payments
+[0m10:51:00.415530 [debug] [Thread-1  ]: Writing runtime sql for node "model.za_payment_risk.stg_payments"
+[0m10:51:00.416224 [debug] [Thread-1  ]: Using duckdb connection "model.za_payment_risk.stg_payments"
+[0m10:51:00.416544 [debug] [Thread-1  ]: On model.za_payment_risk.stg_payments: BEGIN
+[0m10:51:00.416756 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m10:51:00.417151 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m10:51:00.417356 [debug] [Thread-1  ]: Using duckdb connection "model.za_payment_risk.stg_payments"
+[0m10:51:00.417645 [debug] [Thread-1  ]: On model.za_payment_risk.stg_payments: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "node_id": "model.za_payment_risk.stg_payments"} */
+
+  
+  create view "za_payments"."main"."stg_payments__dbt_tmp" as (
+    -- stg_payments.sql
+-- Casts, renames and enriches raw scored payment events.
+-- Source: raw.payments (DuckDB reading from local JSON/Parquet)
+
+with source as (
+
+    select * from "za_payments"."raw"."sample_payments"
+
+),
+
+renamed as (
+
+    select
+        -- identifiers
+        transaction_id,
+        bank_code,
+        originator_id,
+
+        -- timestamps
+        cast(timestamp as timestamptz)          as transaction_at,
+        cast(processed_at as timestamptz)       as processed_at,
+
+        -- payment details
+        cast(amount_zar as decimal(18,2))       as amount_zar,
+        upper(trim(currency))                   as currency,
+        cast(exchange_rate as decimal(12,6))    as exchange_rate,
+        cast(amount_foreign as decimal(18,2))   as amount_foreign,
+
+        -- compliance fields
+        upper(trim(bop_category_code))          as bop_category_code,
+        bop_description,
+        upper(trim(beneficiary_country))        as beneficiary_country,
+        upper(trim(swift_bic))                  as swift_bic,
+        transaction_purpose,
+
+        -- ADA tracking
+        cast(ada_ytd_used as decimal(18,2))     as ada_ytd_used,
+        cast(ada_limit as decimal(18,2))        as ada_limit,
+        round(
+            (cast(ada_ytd_used as decimal(18,2)) + cast(amount_zar as decimal(18,2)))
+            / nullif(cast(ada_limit as decimal(18,2)), 0) * 100
+        , 2)                                    as ada_utilisation_pct,
+
+        -- entity
+        is_resident,
+        upper(entity_type)                      as entity_type,
+
+        -- risk scoring
+        cast(risk_score as integer)             as risk_score,
+        upper(risk_band)                        as risk_band,
+        compliance_passed,
+        requires_sar,
+        finsurvreportable,
+        cast(violation_count as integer)        as violation_count,
+        cast(warning_count as integer)          as warning_count,
+
+        -- metadata
+        source_system,
+        schema_version
+
+    from source
+
+),
+
+enriched as (
+
+    select *,
+        case when risk_band = 'CRITICAL' then true else false end   as is_critical,
+        case when risk_band in ('HIGH','CRITICAL') then true
+             else false end                                         as needs_review,
+        case when ada_utilisation_pct > 100 then true
+             else false end                                         as is_ada_breached,
+        case when ada_utilisation_pct between 85 and 100 then true
+             else false end                                         as is_ada_approaching
+
+    from renamed
+
+)
+
+select * from enriched
+  );
+
+[0m10:51:00.422205 [debug] [Thread-1  ]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "node_id": "model.za_payment_risk.stg_payments"} */
+
+  
+  create view "za_payments"."main"."stg_payments__dbt_tmp" as (
+    -- stg_payments.sql
+-- Casts, renames and enriches raw scored payment events.
+-- Source: raw.payments (DuckDB reading from local JSON/Parquet)
+
+with source as (
+
+    select * from "za_payments"."raw"."sample_payments"
+
+),
+
+renamed as (
+
+    select
+        -- identifiers
+        transaction_id,
+        bank_code,
+        originator_id,
+
+        -- timestamps
+        cast(timestamp as timestamptz)          as transaction_at,
+        cast(processed_at as timestamptz)       as processed_at,
+
+        -- payment details
+        cast(amount_zar as decimal(18,2))       as amount_zar,
+        upper(trim(currency))                   as currency,
+        cast(exchange_rate as decimal(12,6))    as exchange_rate,
+        cast(amount_foreign as decimal(18,2))   as amount_foreign,
+
+        -- compliance fields
+        upper(trim(bop_category_code))          as bop_category_code,
+        bop_description,
+        upper(trim(beneficiary_country))        as beneficiary_country,
+        upper(trim(swift_bic))                  as swift_bic,
+        transaction_purpose,
+
+        -- ADA tracking
+        cast(ada_ytd_used as decimal(18,2))     as ada_ytd_used,
+        cast(ada_limit as decimal(18,2))        as ada_limit,
+        round(
+            (cast(ada_ytd_used as decimal(18,2)) + cast(amount_zar as decimal(18,2)))
+            / nullif(cast(ada_limit as decimal(18,2)), 0) * 100
+        , 2)                                    as ada_utilisation_pct,
+
+        -- entity
+        is_resident,
+        upper(entity_type)                      as entity_type,
+
+        -- risk scoring
+        cast(risk_score as integer)             as risk_score,
+        upper(risk_band)                        as risk_band,
+        compliance_passed,
+        requires_sar,
+        finsurvreportable,
+        cast(violation_count as integer)        as violation_count,
+        cast(warning_count as integer)          as warning_count,
+
+        -- metadata
+        source_system,
+        schema_version
+
+    from source
+
+),
+
+enriched as (
+
+    select *,
+        case when risk_band = 'CRITICAL' then true else false end   as is_critical,
+        case when risk_band in ('HIGH','CRITICAL') then true
+             else false end                                         as needs_review,
+        case when ada_utilisation_pct > 100 then true
+             else false end                                         as is_ada_breached,
+        case when ada_utilisation_pct between 85 and 100 then true
+             else false end                                         as is_ada_approaching
+
+    from renamed
+
+)
+
+select * from enriched
+  );
+
+[0m10:51:00.422504 [debug] [Thread-1  ]: DuckDB adapter: Rolling back transaction.
+[0m10:51:00.422783 [debug] [Thread-1  ]: On model.za_payment_risk.stg_payments: ROLLBACK
+[0m10:51:00.438690 [debug] [Thread-1  ]: Failed to rollback 'model.za_payment_risk.stg_payments'
+[0m10:51:00.438941 [debug] [Thread-1  ]: On model.za_payment_risk.stg_payments: Close
+[0m10:51:00.441973 [debug] [Thread-1  ]: Runtime Error in model stg_payments (models/staging/stg_payments.sql)
+  Catalog Error: Table with name sample_payments does not exist!
+  Did you mean "main_raw.sample_payments"?
+  
+  LINE 11:     select * from "za_payments"."raw"."sample_payments"
+                             ^
+[0m10:51:00.443185 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c8a8f3fe-b879-411b-99e0-82b34ca6a4de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b5cdc10>]}
+[0m10:51:00.443593 [error] [Thread-1  ]: 1 of 3 ERROR creating sql view model main.stg_payments ......................... [[31mERROR[0m in 0.05s]
+[0m10:51:00.443942 [debug] [Thread-1  ]: Finished running node model.za_payment_risk.stg_payments
+[0m10:51:00.444243 [debug] [Thread-7  ]: Marking all children of 'model.za_payment_risk.stg_payments' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_payments (models/staging/stg_payments.sql)
+  Catalog Error: Table with name sample_payments does not exist!
+  Did you mean "main_raw.sample_payments"?
+  
+  LINE 11:     select * from "za_payments"."raw"."sample_payments"
+                             ^.
+[0m10:51:00.444667 [debug] [Thread-3  ]: Began running node model.za_payment_risk.corridor_exposure
+[0m10:51:00.444972 [debug] [Thread-4  ]: Began running node model.za_payment_risk.finsurvreport_daily
+[0m10:51:00.445222 [info ] [Thread-3  ]: 2 of 3 SKIP relation main.corridor_exposure .................................... [[33mSKIP[0m]
+[0m10:51:00.445528 [info ] [Thread-4  ]: 3 of 3 SKIP relation main.finsurvreport_daily .................................. [[33mSKIP[0m]
+[0m10:51:00.445801 [debug] [Thread-3  ]: Finished running node model.za_payment_risk.corridor_exposure
+[0m10:51:00.446035 [debug] [Thread-4  ]: Finished running node model.za_payment_risk.finsurvreport_daily
+[0m10:51:00.446663 [debug] [MainThread]: Using duckdb connection "master"
+[0m10:51:00.446847 [debug] [MainThread]: On master: BEGIN
+[0m10:51:00.447010 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m10:51:00.447356 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m10:51:00.447543 [debug] [MainThread]: On master: COMMIT
+[0m10:51:00.447720 [debug] [MainThread]: Using duckdb connection "master"
+[0m10:51:00.447886 [debug] [MainThread]: On master: COMMIT
+[0m10:51:00.448132 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m10:51:00.448308 [debug] [MainThread]: On master: Close
+[0m10:51:00.448529 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:51:00.448689 [debug] [MainThread]: Connection 'model.za_payment_risk.stg_payments' was properly closed.
+[0m10:51:00.448843 [debug] [MainThread]: Connection 'list_za_payments_main' was properly closed.
+[0m10:51:00.449047 [info ] [MainThread]: 
+[0m10:51:00.449244 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 0.14 seconds (0.14s).
+[0m10:51:00.449806 [debug] [MainThread]: Command end result
+[0m10:51:00.464930 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/manifest.json
+[0m10:51:00.466071 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/semantic_manifest.json
+[0m10:51:00.470529 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/run_results.json
+[0m10:51:00.470762 [info ] [MainThread]: 
+[0m10:51:00.471013 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m10:51:00.471215 [info ] [MainThread]: 
+[0m10:51:00.471454 [error] [MainThread]: [31mFailure in model stg_payments (models/staging/stg_payments.sql)[0m
+[0m10:51:00.471682 [error] [MainThread]:   Runtime Error in model stg_payments (models/staging/stg_payments.sql)
+  Catalog Error: Table with name sample_payments does not exist!
+  Did you mean "main_raw.sample_payments"?
+  
+  LINE 11:     select * from "za_payments"."raw"."sample_payments"
+                             ^
+[0m10:51:00.471870 [info ] [MainThread]: 
+[0m10:51:00.472082 [info ] [MainThread]:   compiled code at target/compiled/za_payment_risk/models/staging/stg_payments.sql
+[0m10:51:00.472264 [info ] [MainThread]: 
+[0m10:51:00.472462 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=2 NO-OP=0 TOTAL=3
+[0m10:51:00.474248 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.8096729, "process_in_blocks": "0", "process_kernel_time": 0.204541, "process_mem_max_rss": "161546240", "process_out_blocks": "0", "process_user_time": 2.190653}
+[0m10:51:00.474524 [debug] [MainThread]: Command `dbt run` failed at 10:51:00.474476 after 0.81 seconds
+[0m10:51:00.474765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a01b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa58fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b04efd0>]}
+[0m10:51:00.475005 [debug] [MainThread]: Flushing usage events
+[0m10:51:01.679238 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:52:16.412118 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b110460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c199a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c1998b0>]}
+
+
+============================== 10:52:16.415090 | 94f28c17-4265-461e-9f19-8c88d4e9da49 ==============================
+[0m10:52:16.415090 [info ] [MainThread]: Running with dbt=1.10.23
+[0m10:52:16.415450 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'invocation_command': 'dbt run --profiles-dir .', 'log_cache_events': 'False', 'partial_parse': 'True', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'log_path': '/Users/tshepotau/za-payment-risk-pipeline/dbt_project/logs', 'fail_fast': 'False', 'empty': 'False', 'debug': 'False', 'quiet': 'False', 'write_json': 'True', 'target_path': 'None', 'indirect_selection': 'eager', 'profiles_dir': '.', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'printer_width': '80', 'use_colors': 'True', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m10:52:16.415697 [info ] [MainThread]: This version of dbt is deprecated and no longer receives regular patches, including for known bugs. We recommend upgrading to a newer supported version of dbt: https://docs.getdbt.com/docs/dbt-versions
+[0m10:52:16.415911 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecated_version_invocation', 'label': '94f28c17-4265-461e-9f19-8c88d4e9da49', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b110460>]}
+[0m10:52:16.643820 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '94f28c17-4265-461e-9f19-8c88d4e9da49', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b3de4c0>]}
+[0m10:52:16.677668 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '94f28c17-4265-461e-9f19-8c88d4e9da49', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba0dd90>]}
+[0m10:52:16.679301 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m10:52:16.750162 [debug] [MainThread]: checksum: 2b1352ea083ab2415ad0dbf54db2d1ac6054af1cb939f9d756e37438b9e9a7cf, vars: {}, profile: , target: , version: 1.10.23
+[0m10:52:16.913776 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m10:52:16.914344 [debug] [MainThread]: Partial parsing: updated file: za_payment_risk://models/staging/sources.yml
+[0m10:52:17.204500 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.za_payment_risk.intermediate
+[0m10:52:17.214344 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '94f28c17-4265-461e-9f19-8c88d4e9da49', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cb99070>]}
+[0m10:52:17.284053 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/manifest.json
+[0m10:52:17.285668 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/semantic_manifest.json
+[0m10:52:17.298280 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '94f28c17-4265-461e-9f19-8c88d4e9da49', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c72b790>]}
+[0m10:52:17.298633 [info ] [MainThread]: Found 1 seed, 3 models, 5 data tests, 1 source, 456 macros
+[0m10:52:17.298859 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '94f28c17-4265-461e-9f19-8c88d4e9da49', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c719cd0>]}
+[0m10:52:17.299741 [info ] [MainThread]: 
+[0m10:52:17.299964 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m10:52:17.300150 [info ] [MainThread]: 
+[0m10:52:17.300499 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m10:52:17.303695 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_za_payments'
+[0m10:52:17.341614 [debug] [ThreadPool]: Using duckdb connection "list_za_payments"
+[0m10:52:17.341899 [debug] [ThreadPool]: On list_za_payments: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "connection_name": "list_za_payments"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"za_payments"'
+    
+  
+  
+[0m10:52:17.342093 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:52:17.359267 [debug] [ThreadPool]: SQL status: OK in 0.017 seconds
+[0m10:52:17.360065 [debug] [ThreadPool]: On list_za_payments: Close
+[0m10:52:17.360483 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_za_payments, now create_za_payments_main)
+[0m10:52:17.360763 [debug] [ThreadPool]: Creating schema "database: "za_payments"
+schema: "main"
+"
+[0m10:52:17.365470 [debug] [ThreadPool]: Using duckdb connection "create_za_payments_main"
+[0m10:52:17.365712 [debug] [ThreadPool]: On create_za_payments_main: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "connection_name": "create_za_payments_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='za_payments'
+        and type='sqlite'
+    
+  
+[0m10:52:17.365907 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:52:17.366600 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m10:52:17.367311 [debug] [ThreadPool]: Using duckdb connection "create_za_payments_main"
+[0m10:52:17.367501 [debug] [ThreadPool]: On create_za_payments_main: BEGIN
+[0m10:52:17.367763 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m10:52:17.367935 [debug] [ThreadPool]: Using duckdb connection "create_za_payments_main"
+[0m10:52:17.368108 [debug] [ThreadPool]: On create_za_payments_main: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "connection_name": "create_za_payments_main"} */
+
+    
+    
+        create schema if not exists "za_payments"."main"
+    
+[0m10:52:17.368622 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m10:52:17.369079 [debug] [ThreadPool]: On create_za_payments_main: COMMIT
+[0m10:52:17.369256 [debug] [ThreadPool]: Using duckdb connection "create_za_payments_main"
+[0m10:52:17.369422 [debug] [ThreadPool]: On create_za_payments_main: COMMIT
+[0m10:52:17.369667 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m10:52:17.369845 [debug] [ThreadPool]: On create_za_payments_main: Close
+[0m10:52:17.370565 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_za_payments_main, now list_za_payments_main_raw)
+[0m10:52:17.374651 [debug] [ThreadPool]: Using duckdb connection "list_za_payments_main_raw"
+[0m10:52:17.374942 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_za_payments_main'
+[0m10:52:17.375146 [debug] [ThreadPool]: On list_za_payments_main_raw: BEGIN
+[0m10:52:17.376659 [debug] [ThreadPool]: Using duckdb connection "list_za_payments_main"
+[0m10:52:17.376870 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:52:17.377065 [debug] [ThreadPool]: On list_za_payments_main: BEGIN
+[0m10:52:17.377317 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:52:17.377555 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m10:52:17.377732 [debug] [ThreadPool]: Using duckdb connection "list_za_payments_main_raw"
+[0m10:52:17.377902 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m10:52:17.378101 [debug] [ThreadPool]: On list_za_payments_main_raw: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "connection_name": "list_za_payments_main_raw"} */
+select
+      'za_payments' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_raw'
+    and lower(table_catalog) = 'za_payments'
+  
+[0m10:52:17.378293 [debug] [ThreadPool]: Using duckdb connection "list_za_payments_main"
+[0m10:52:17.378552 [debug] [ThreadPool]: On list_za_payments_main: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "connection_name": "list_za_payments_main"} */
+select
+      'za_payments' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'za_payments'
+  
+[0m10:52:17.387668 [debug] [ThreadPool]: SQL status: OK in 0.009 seconds
+[0m10:52:17.387924 [debug] [ThreadPool]: SQL status: OK in 0.009 seconds
+[0m10:52:17.388615 [debug] [ThreadPool]: On list_za_payments_main: ROLLBACK
+[0m10:52:17.390018 [debug] [ThreadPool]: On list_za_payments_main_raw: ROLLBACK
+[0m10:52:17.391316 [debug] [ThreadPool]: Failed to rollback 'list_za_payments_main'
+[0m10:52:17.391536 [debug] [ThreadPool]: Failed to rollback 'list_za_payments_main_raw'
+[0m10:52:17.391726 [debug] [ThreadPool]: On list_za_payments_main: Close
+[0m10:52:17.391913 [debug] [ThreadPool]: On list_za_payments_main_raw: Close
+[0m10:52:17.392461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '94f28c17-4265-461e-9f19-8c88d4e9da49', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cc9ad60>]}
+[0m10:52:17.392793 [debug] [MainThread]: Using duckdb connection "master"
+[0m10:52:17.392981 [debug] [MainThread]: On master: BEGIN
+[0m10:52:17.393150 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:52:17.393437 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m10:52:17.393616 [debug] [MainThread]: On master: COMMIT
+[0m10:52:17.393788 [debug] [MainThread]: Using duckdb connection "master"
+[0m10:52:17.393962 [debug] [MainThread]: On master: COMMIT
+[0m10:52:17.394195 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m10:52:17.394373 [debug] [MainThread]: On master: Close
+[0m10:52:17.395955 [debug] [Thread-1  ]: Began running node model.za_payment_risk.stg_payments
+[0m10:52:17.396288 [info ] [Thread-1  ]: 1 of 3 START sql view model main.stg_payments .................................. [RUN]
+[0m10:52:17.396562 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_za_payments_main_raw, now model.za_payment_risk.stg_payments)
+[0m10:52:17.396780 [debug] [Thread-1  ]: Began compiling node model.za_payment_risk.stg_payments
+[0m10:52:17.402556 [debug] [Thread-1  ]: Writing injected SQL for node "model.za_payment_risk.stg_payments"
+[0m10:52:17.403071 [debug] [Thread-1  ]: Began executing node model.za_payment_risk.stg_payments
+[0m10:52:17.423170 [debug] [Thread-1  ]: Writing runtime sql for node "model.za_payment_risk.stg_payments"
+[0m10:52:17.423705 [debug] [Thread-1  ]: Using duckdb connection "model.za_payment_risk.stg_payments"
+[0m10:52:17.423929 [debug] [Thread-1  ]: On model.za_payment_risk.stg_payments: BEGIN
+[0m10:52:17.424133 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m10:52:17.424529 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m10:52:17.424730 [debug] [Thread-1  ]: Using duckdb connection "model.za_payment_risk.stg_payments"
+[0m10:52:17.425004 [debug] [Thread-1  ]: On model.za_payment_risk.stg_payments: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "node_id": "model.za_payment_risk.stg_payments"} */
+
+  
+  create view "za_payments"."main"."stg_payments__dbt_tmp" as (
+    -- stg_payments.sql
+-- Casts, renames and enriches raw scored payment events.
+-- Source: raw.payments (DuckDB reading from local JSON/Parquet)
+
+with source as (
+
+    select * from "za_payments"."main_raw"."sample_payments"
+
+),
+
+renamed as (
+
+    select
+        -- identifiers
+        transaction_id,
+        bank_code,
+        originator_id,
+
+        -- timestamps
+        cast(timestamp as timestamptz)          as transaction_at,
+        cast(processed_at as timestamptz)       as processed_at,
+
+        -- payment details
+        cast(amount_zar as decimal(18,2))       as amount_zar,
+        upper(trim(currency))                   as currency,
+        cast(exchange_rate as decimal(12,6))    as exchange_rate,
+        cast(amount_foreign as decimal(18,2))   as amount_foreign,
+
+        -- compliance fields
+        upper(trim(bop_category_code))          as bop_category_code,
+        bop_description,
+        upper(trim(beneficiary_country))        as beneficiary_country,
+        upper(trim(swift_bic))                  as swift_bic,
+        transaction_purpose,
+
+        -- ADA tracking
+        cast(ada_ytd_used as decimal(18,2))     as ada_ytd_used,
+        cast(ada_limit as decimal(18,2))        as ada_limit,
+        round(
+            (cast(ada_ytd_used as decimal(18,2)) + cast(amount_zar as decimal(18,2)))
+            / nullif(cast(ada_limit as decimal(18,2)), 0) * 100
+        , 2)                                    as ada_utilisation_pct,
+
+        -- entity
+        is_resident,
+        upper(entity_type)                      as entity_type,
+
+        -- risk scoring
+        cast(risk_score as integer)             as risk_score,
+        upper(risk_band)                        as risk_band,
+        compliance_passed,
+        requires_sar,
+        finsurvreportable,
+        cast(violation_count as integer)        as violation_count,
+        cast(warning_count as integer)          as warning_count,
+
+        -- metadata
+        source_system,
+        schema_version
+
+    from source
+
+),
+
+enriched as (
+
+    select *,
+        case when risk_band = 'CRITICAL' then true else false end   as is_critical,
+        case when risk_band in ('HIGH','CRITICAL') then true
+             else false end                                         as needs_review,
+        case when ada_utilisation_pct > 100 then true
+             else false end                                         as is_ada_breached,
+        case when ada_utilisation_pct between 85 and 100 then true
+             else false end                                         as is_ada_approaching
+
+    from renamed
+
+)
+
+select * from enriched
+  );
+
+[0m10:52:17.430876 [debug] [Thread-1  ]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "node_id": "model.za_payment_risk.stg_payments"} */
+
+  
+  create view "za_payments"."main"."stg_payments__dbt_tmp" as (
+    -- stg_payments.sql
+-- Casts, renames and enriches raw scored payment events.
+-- Source: raw.payments (DuckDB reading from local JSON/Parquet)
+
+with source as (
+
+    select * from "za_payments"."main_raw"."sample_payments"
+
+),
+
+renamed as (
+
+    select
+        -- identifiers
+        transaction_id,
+        bank_code,
+        originator_id,
+
+        -- timestamps
+        cast(timestamp as timestamptz)          as transaction_at,
+        cast(processed_at as timestamptz)       as processed_at,
+
+        -- payment details
+        cast(amount_zar as decimal(18,2))       as amount_zar,
+        upper(trim(currency))                   as currency,
+        cast(exchange_rate as decimal(12,6))    as exchange_rate,
+        cast(amount_foreign as decimal(18,2))   as amount_foreign,
+
+        -- compliance fields
+        upper(trim(bop_category_code))          as bop_category_code,
+        bop_description,
+        upper(trim(beneficiary_country))        as beneficiary_country,
+        upper(trim(swift_bic))                  as swift_bic,
+        transaction_purpose,
+
+        -- ADA tracking
+        cast(ada_ytd_used as decimal(18,2))     as ada_ytd_used,
+        cast(ada_limit as decimal(18,2))        as ada_limit,
+        round(
+            (cast(ada_ytd_used as decimal(18,2)) + cast(amount_zar as decimal(18,2)))
+            / nullif(cast(ada_limit as decimal(18,2)), 0) * 100
+        , 2)                                    as ada_utilisation_pct,
+
+        -- entity
+        is_resident,
+        upper(entity_type)                      as entity_type,
+
+        -- risk scoring
+        cast(risk_score as integer)             as risk_score,
+        upper(risk_band)                        as risk_band,
+        compliance_passed,
+        requires_sar,
+        finsurvreportable,
+        cast(violation_count as integer)        as violation_count,
+        cast(warning_count as integer)          as warning_count,
+
+        -- metadata
+        source_system,
+        schema_version
+
+    from source
+
+),
+
+enriched as (
+
+    select *,
+        case when risk_band = 'CRITICAL' then true else false end   as is_critical,
+        case when risk_band in ('HIGH','CRITICAL') then true
+             else false end                                         as needs_review,
+        case when ada_utilisation_pct > 100 then true
+             else false end                                         as is_ada_breached,
+        case when ada_utilisation_pct between 85 and 100 then true
+             else false end                                         as is_ada_approaching
+
+    from renamed
+
+)
+
+select * from enriched
+  );
+
+[0m10:52:17.431188 [debug] [Thread-1  ]: DuckDB adapter: Rolling back transaction.
+[0m10:52:17.431464 [debug] [Thread-1  ]: On model.za_payment_risk.stg_payments: ROLLBACK
+[0m10:52:17.448109 [debug] [Thread-1  ]: Failed to rollback 'model.za_payment_risk.stg_payments'
+[0m10:52:17.448443 [debug] [Thread-1  ]: On model.za_payment_risk.stg_payments: Close
+[0m10:52:17.451746 [debug] [Thread-1  ]: Runtime Error in model stg_payments (models/staging/stg_payments.sql)
+  Binder Error: No function matches the given name and argument types 'trim(INTEGER)'. You might need to add explicit type casts.
+  	Candidate functions:
+  	trim(VARCHAR) -> VARCHAR
+  	trim(VARCHAR, VARCHAR) -> VARCHAR
+  
+  
+  LINE 34:         upper(trim(bop_category_code))          as bop_category_code,
+                         ^
+[0m10:52:17.453029 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '94f28c17-4265-461e-9f19-8c88d4e9da49', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d0e4400>]}
+[0m10:52:17.453453 [error] [Thread-1  ]: 1 of 3 ERROR creating sql view model main.stg_payments ......................... [[31mERROR[0m in 0.06s]
+[0m10:52:17.453816 [debug] [Thread-1  ]: Finished running node model.za_payment_risk.stg_payments
+[0m10:52:17.454165 [debug] [Thread-7  ]: Marking all children of 'model.za_payment_risk.stg_payments' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_payments (models/staging/stg_payments.sql)
+  Binder Error: No function matches the given name and argument types 'trim(INTEGER)'. You might need to add explicit type casts.
+  	Candidate functions:
+  	trim(VARCHAR) -> VARCHAR
+  	trim(VARCHAR, VARCHAR) -> VARCHAR
+  
+  
+  LINE 34:         upper(trim(bop_category_code))          as bop_category_code,
+                         ^.
+[0m10:52:17.454642 [debug] [Thread-3  ]: Began running node model.za_payment_risk.corridor_exposure
+[0m10:52:17.454887 [debug] [Thread-4  ]: Began running node model.za_payment_risk.finsurvreport_daily
+[0m10:52:17.455153 [info ] [Thread-3  ]: 2 of 3 SKIP relation main.corridor_exposure .................................... [[33mSKIP[0m]
+[0m10:52:17.455625 [debug] [Thread-3  ]: Finished running node model.za_payment_risk.corridor_exposure
+[0m10:52:17.455421 [info ] [Thread-4  ]: 3 of 3 SKIP relation main.finsurvreport_daily .................................. [[33mSKIP[0m]
+[0m10:52:17.455957 [debug] [Thread-4  ]: Finished running node model.za_payment_risk.finsurvreport_daily
+[0m10:52:17.456555 [debug] [MainThread]: Using duckdb connection "master"
+[0m10:52:17.456741 [debug] [MainThread]: On master: BEGIN
+[0m10:52:17.456905 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m10:52:17.457249 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m10:52:17.457423 [debug] [MainThread]: On master: COMMIT
+[0m10:52:17.457594 [debug] [MainThread]: Using duckdb connection "master"
+[0m10:52:17.457765 [debug] [MainThread]: On master: COMMIT
+[0m10:52:17.458010 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m10:52:17.458186 [debug] [MainThread]: On master: Close
+[0m10:52:17.458419 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:52:17.458586 [debug] [MainThread]: Connection 'model.za_payment_risk.stg_payments' was properly closed.
+[0m10:52:17.458744 [debug] [MainThread]: Connection 'list_za_payments_main' was properly closed.
+[0m10:52:17.458970 [info ] [MainThread]: 
+[0m10:52:17.459164 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 0.16 seconds (0.16s).
+[0m10:52:17.459722 [debug] [MainThread]: Command end result
+[0m10:52:17.475848 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/manifest.json
+[0m10:52:17.477106 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/semantic_manifest.json
+[0m10:52:17.481285 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/run_results.json
+[0m10:52:17.481565 [info ] [MainThread]: 
+[0m10:52:17.481838 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m10:52:17.482055 [info ] [MainThread]: 
+[0m10:52:17.482303 [error] [MainThread]: [31mFailure in model stg_payments (models/staging/stg_payments.sql)[0m
+[0m10:52:17.482544 [error] [MainThread]:   Runtime Error in model stg_payments (models/staging/stg_payments.sql)
+  Binder Error: No function matches the given name and argument types 'trim(INTEGER)'. You might need to add explicit type casts.
+  	Candidate functions:
+  	trim(VARCHAR) -> VARCHAR
+  	trim(VARCHAR, VARCHAR) -> VARCHAR
+  
+  
+  LINE 34:         upper(trim(bop_category_code))          as bop_category_code,
+                         ^
+[0m10:52:17.482739 [info ] [MainThread]: 
+[0m10:52:17.482950 [info ] [MainThread]:   compiled code at target/compiled/za_payment_risk/models/staging/stg_payments.sql
+[0m10:52:17.483134 [info ] [MainThread]: 
+[0m10:52:17.483339 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=2 NO-OP=0 TOTAL=3
+[0m10:52:17.485567 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 1.1190181, "process_in_blocks": "0", "process_kernel_time": 0.226079, "process_mem_max_rss": "170835968", "process_out_blocks": "0", "process_user_time": 2.382099}
+[0m10:52:17.485872 [debug] [MainThread]: Command `dbt run` failed at 10:52:17.485815 after 1.12 seconds
+[0m10:52:17.486135 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b110460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b3debb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c72b3a0>]}
+[0m10:52:17.486385 [debug] [MainThread]: Flushing usage events
+[0m10:52:18.739601 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:53:35.747729 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ce07790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dea0550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dea0370>]}
+
+
+============================== 10:53:35.749944 | addbab88-ae83-4d62-ae79-54d685bad628 ==============================
+[0m10:53:35.749944 [info ] [MainThread]: Running with dbt=1.10.23
+[0m10:53:35.750292 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'no_print': 'None', 'quiet': 'False', 'log_path': '/Users/tshepotau/za-payment-risk-pipeline/dbt_project/logs', 'log_cache_events': 'False', 'version_check': 'True', 'static_parser': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'indirect_selection': 'eager', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'printer_width': '80', 'warn_error': 'None', 'write_json': 'True', 'empty': 'False', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'invocation_command': 'dbt run --profiles-dir .', 'target_path': 'None'}
+[0m10:53:35.750523 [info ] [MainThread]: This version of dbt is deprecated and no longer receives regular patches, including for known bugs. We recommend upgrading to a newer supported version of dbt: https://docs.getdbt.com/docs/dbt-versions
+[0m10:53:35.750742 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecated_version_invocation', 'label': 'addbab88-ae83-4d62-ae79-54d685bad628', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ce07790>]}
+[0m10:53:35.877032 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'addbab88-ae83-4d62-ae79-54d685bad628', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d757e80>]}
+[0m10:53:35.911480 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'addbab88-ae83-4d62-ae79-54d685bad628', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e0952b0>]}
+[0m10:53:35.912599 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m10:53:35.978734 [debug] [MainThread]: checksum: 2b1352ea083ab2415ad0dbf54db2d1ac6054af1cb939f9d756e37438b9e9a7cf, vars: {}, profile: , target: , version: 1.10.23
+[0m10:53:36.118790 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m10:53:36.119174 [debug] [MainThread]: Partial parsing: updated file: za_payment_risk://models/staging/stg_payments.sql
+[0m10:53:36.273075 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.za_payment_risk.intermediate
+[0m10:53:36.284254 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'addbab88-ae83-4d62-ae79-54d685bad628', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e697130>]}
+[0m10:53:36.352502 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/manifest.json
+[0m10:53:36.353524 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/semantic_manifest.json
+[0m10:53:36.360425 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'addbab88-ae83-4d62-ae79-54d685bad628', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e6916d0>]}
+[0m10:53:36.360708 [info ] [MainThread]: Found 1 seed, 3 models, 5 data tests, 1 source, 456 macros
+[0m10:53:36.360923 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'addbab88-ae83-4d62-ae79-54d685bad628', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e6cb700>]}
+[0m10:53:36.361719 [info ] [MainThread]: 
+[0m10:53:36.361947 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m10:53:36.362137 [info ] [MainThread]: 
+[0m10:53:36.362418 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m10:53:36.365409 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_za_payments'
+[0m10:53:36.397230 [debug] [ThreadPool]: Using duckdb connection "list_za_payments"
+[0m10:53:36.397479 [debug] [ThreadPool]: On list_za_payments: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "connection_name": "list_za_payments"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"za_payments"'
+    
+  
+  
+[0m10:53:36.397658 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:53:36.403593 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m10:53:36.404258 [debug] [ThreadPool]: On list_za_payments: Close
+[0m10:53:36.404623 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_za_payments, now create_za_payments_main)
+[0m10:53:36.404876 [debug] [ThreadPool]: Creating schema "database: "za_payments"
+schema: "main"
+"
+[0m10:53:36.409055 [debug] [ThreadPool]: Using duckdb connection "create_za_payments_main"
+[0m10:53:36.409251 [debug] [ThreadPool]: On create_za_payments_main: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "connection_name": "create_za_payments_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='za_payments'
+        and type='sqlite'
+    
+  
+[0m10:53:36.409421 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:53:36.409830 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m10:53:36.410453 [debug] [ThreadPool]: Using duckdb connection "create_za_payments_main"
+[0m10:53:36.410626 [debug] [ThreadPool]: On create_za_payments_main: BEGIN
+[0m10:53:36.410876 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m10:53:36.411034 [debug] [ThreadPool]: Using duckdb connection "create_za_payments_main"
+[0m10:53:36.411194 [debug] [ThreadPool]: On create_za_payments_main: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "connection_name": "create_za_payments_main"} */
+
+    
+    
+        create schema if not exists "za_payments"."main"
+    
+[0m10:53:36.411445 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m10:53:36.411854 [debug] [ThreadPool]: On create_za_payments_main: COMMIT
+[0m10:53:36.412020 [debug] [ThreadPool]: Using duckdb connection "create_za_payments_main"
+[0m10:53:36.412174 [debug] [ThreadPool]: On create_za_payments_main: COMMIT
+[0m10:53:36.412398 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m10:53:36.412559 [debug] [ThreadPool]: On create_za_payments_main: Close
+[0m10:53:36.413228 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_za_payments_main, now list_za_payments_main_raw)
+[0m10:53:36.413519 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_za_payments_main'
+[0m10:53:36.416908 [debug] [ThreadPool]: Using duckdb connection "list_za_payments_main_raw"
+[0m10:53:36.418393 [debug] [ThreadPool]: Using duckdb connection "list_za_payments_main"
+[0m10:53:36.418612 [debug] [ThreadPool]: On list_za_payments_main_raw: BEGIN
+[0m10:53:36.418797 [debug] [ThreadPool]: On list_za_payments_main: BEGIN
+[0m10:53:36.418969 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:53:36.419132 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:53:36.419459 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m10:53:36.419629 [debug] [ThreadPool]: Using duckdb connection "list_za_payments_main_raw"
+[0m10:53:36.419800 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m10:53:36.419991 [debug] [ThreadPool]: On list_za_payments_main_raw: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "connection_name": "list_za_payments_main_raw"} */
+select
+      'za_payments' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_raw'
+    and lower(table_catalog) = 'za_payments'
+  
+[0m10:53:36.420183 [debug] [ThreadPool]: Using duckdb connection "list_za_payments_main"
+[0m10:53:36.420449 [debug] [ThreadPool]: On list_za_payments_main: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "connection_name": "list_za_payments_main"} */
+select
+      'za_payments' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'za_payments'
+  
+[0m10:53:36.426636 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m10:53:36.426879 [debug] [ThreadPool]: SQL status: OK in 0.007 seconds
+[0m10:53:36.427510 [debug] [ThreadPool]: On list_za_payments_main: ROLLBACK
+[0m10:53:36.428833 [debug] [ThreadPool]: On list_za_payments_main_raw: ROLLBACK
+[0m10:53:36.429648 [debug] [ThreadPool]: Failed to rollback 'list_za_payments_main'
+[0m10:53:36.429918 [debug] [ThreadPool]: Failed to rollback 'list_za_payments_main_raw'
+[0m10:53:36.430090 [debug] [ThreadPool]: On list_za_payments_main: Close
+[0m10:53:36.430264 [debug] [ThreadPool]: On list_za_payments_main_raw: Close
+[0m10:53:36.430779 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'addbab88-ae83-4d62-ae79-54d685bad628', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e523d90>]}
+[0m10:53:36.431036 [debug] [MainThread]: Using duckdb connection "master"
+[0m10:53:36.431207 [debug] [MainThread]: On master: BEGIN
+[0m10:53:36.431363 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:53:36.431631 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m10:53:36.431796 [debug] [MainThread]: On master: COMMIT
+[0m10:53:36.431957 [debug] [MainThread]: Using duckdb connection "master"
+[0m10:53:36.432114 [debug] [MainThread]: On master: COMMIT
+[0m10:53:36.432356 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m10:53:36.432540 [debug] [MainThread]: On master: Close
+[0m10:53:36.433613 [debug] [Thread-1  ]: Began running node model.za_payment_risk.stg_payments
+[0m10:53:36.433911 [info ] [Thread-1  ]: 1 of 3 START sql view model main.stg_payments .................................. [RUN]
+[0m10:53:36.434201 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_za_payments_main_raw, now model.za_payment_risk.stg_payments)
+[0m10:53:36.434441 [debug] [Thread-1  ]: Began compiling node model.za_payment_risk.stg_payments
+[0m10:53:36.439624 [debug] [Thread-1  ]: Writing injected SQL for node "model.za_payment_risk.stg_payments"
+[0m10:53:36.440017 [debug] [Thread-1  ]: Began executing node model.za_payment_risk.stg_payments
+[0m10:53:36.459595 [debug] [Thread-1  ]: Writing runtime sql for node "model.za_payment_risk.stg_payments"
+[0m10:53:36.460298 [debug] [Thread-1  ]: Using duckdb connection "model.za_payment_risk.stg_payments"
+[0m10:53:36.460521 [debug] [Thread-1  ]: On model.za_payment_risk.stg_payments: BEGIN
+[0m10:53:36.460719 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m10:53:36.461075 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m10:53:36.461270 [debug] [Thread-1  ]: Using duckdb connection "model.za_payment_risk.stg_payments"
+[0m10:53:36.461553 [debug] [Thread-1  ]: On model.za_payment_risk.stg_payments: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "node_id": "model.za_payment_risk.stg_payments"} */
+
+  
+  create view "za_payments"."main"."stg_payments__dbt_tmp" as (
+    -- stg_payments.sql
+-- Casts, renames and enriches raw scored payment events.
+
+with source as (
+
+    select * from "za_payments"."main_raw"."sample_payments"
+
+),
+
+renamed as (
+
+    select
+        -- identifiers
+        cast(transaction_id as varchar)                     as transaction_id,
+        cast(bank_code as varchar)                          as bank_code,
+        cast(originator_id as varchar)                      as originator_id,
+
+        -- timestamps
+        cast(timestamp as timestamptz)                      as transaction_at,
+        cast(processed_at as timestamptz)                   as processed_at,
+
+        -- payment details
+        cast(amount_zar as decimal(18,2))                   as amount_zar,
+        upper(cast(currency as varchar))                    as currency,
+        cast(exchange_rate as decimal(12,6))                as exchange_rate,
+        cast(amount_foreign as decimal(18,2))               as amount_foreign,
+
+        -- compliance fields
+        upper(cast(bop_category_code as varchar))           as bop_category_code,
+        cast(bop_description as varchar)                    as bop_description,
+        upper(cast(beneficiary_country as varchar))         as beneficiary_country,
+        upper(cast(swift_bic as varchar))                   as swift_bic,
+        cast(transaction_purpose as varchar)                as transaction_purpose,
+
+        -- ADA tracking
+        cast(ada_ytd_used as decimal(18,2))                 as ada_ytd_used,
+        cast(ada_limit as decimal(18,2))                    as ada_limit,
+        round(
+            (cast(ada_ytd_used as decimal(18,2)) + cast(amount_zar as decimal(18,2)))
+            / nullif(cast(ada_limit as decimal(18,2)), 0) * 100
+        , 2)                                                as ada_utilisation_pct,
+
+        -- entity
+        cast(is_resident as boolean)                        as is_resident,
+        upper(cast(entity_type as varchar))                 as entity_type,
+
+        -- risk scoring
+        cast(risk_score as integer)                         as risk_score,
+        upper(cast(risk_band as varchar))                   as risk_band,
+        cast(compliance_passed as boolean)                  as compliance_passed,
+        cast(requires_sar as boolean)                       as requires_sar,
+        cast(finsurvreportable as boolean)                  as finsurvreportable,
+        cast(violation_count as integer)                    as violation_count,
+        cast(warning_count as integer)                      as warning_count,
+
+        -- metadata
+        cast(source_system as varchar)                      as source_system,
+        cast(schema_version as varchar)                     as schema_version
+
+    from source
+
+),
+
+enriched as (
+
+    select *,
+        case when risk_band = 'CRITICAL' then true else false end    as is_critical,
+        case when risk_band in ('HIGH','CRITICAL') then true
+             else false end                                          as needs_review,
+        case when ada_utilisation_pct > 100 then true
+             else false end                                          as is_ada_breached,
+        case when ada_utilisation_pct between 85 and 100 then true
+             else false end                                          as is_ada_approaching
+
+    from renamed
+
+)
+
+select * from enriched
+  );
+
+[0m10:53:36.463587 [debug] [Thread-1  ]: SQL status: OK in 0.002 seconds
+[0m10:53:36.467457 [debug] [Thread-1  ]: Using duckdb connection "model.za_payment_risk.stg_payments"
+[0m10:53:36.467753 [debug] [Thread-1  ]: On model.za_payment_risk.stg_payments: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "node_id": "model.za_payment_risk.stg_payments"} */
+alter view "za_payments"."main"."stg_payments__dbt_tmp" rename to "stg_payments"
+[0m10:53:36.469163 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m10:53:36.475018 [debug] [Thread-1  ]: On model.za_payment_risk.stg_payments: COMMIT
+[0m10:53:36.475241 [debug] [Thread-1  ]: Using duckdb connection "model.za_payment_risk.stg_payments"
+[0m10:53:36.475435 [debug] [Thread-1  ]: On model.za_payment_risk.stg_payments: COMMIT
+[0m10:53:36.476220 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m10:53:36.479750 [debug] [Thread-1  ]: Using duckdb connection "model.za_payment_risk.stg_payments"
+[0m10:53:36.480156 [debug] [Thread-1  ]: On model.za_payment_risk.stg_payments: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "node_id": "model.za_payment_risk.stg_payments"} */
+
+      drop view if exists "za_payments"."main"."stg_payments__dbt_backup" cascade
+    
+[0m10:53:36.480551 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m10:53:36.482401 [debug] [Thread-1  ]: On model.za_payment_risk.stg_payments: Close
+[0m10:53:36.483632 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'addbab88-ae83-4d62-ae79-54d685bad628', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ebe51f0>]}
+[0m10:53:36.484050 [info ] [Thread-1  ]: 1 of 3 OK created sql view model main.stg_payments ............................. [[32mOK[0m in 0.05s]
+[0m10:53:36.484424 [debug] [Thread-1  ]: Finished running node model.za_payment_risk.stg_payments
+[0m10:53:36.484854 [debug] [Thread-3  ]: Began running node model.za_payment_risk.corridor_exposure
+[0m10:53:36.485129 [debug] [Thread-4  ]: Began running node model.za_payment_risk.finsurvreport_daily
+[0m10:53:36.485427 [info ] [Thread-3  ]: 2 of 3 START sql table model main.corridor_exposure ............................ [RUN]
+[0m10:53:36.485778 [info ] [Thread-4  ]: 3 of 3 START sql table model main.finsurvreport_daily .......................... [RUN]
+[0m10:53:36.486111 [debug] [Thread-3  ]: Acquiring new duckdb connection 'model.za_payment_risk.corridor_exposure'
+[0m10:53:36.486402 [debug] [Thread-4  ]: Acquiring new duckdb connection 'model.za_payment_risk.finsurvreport_daily'
+[0m10:53:36.486639 [debug] [Thread-3  ]: Began compiling node model.za_payment_risk.corridor_exposure
+[0m10:53:36.486843 [debug] [Thread-4  ]: Began compiling node model.za_payment_risk.finsurvreport_daily
+[0m10:53:36.488778 [debug] [Thread-3  ]: Writing injected SQL for node "model.za_payment_risk.corridor_exposure"
+[0m10:53:36.490793 [debug] [Thread-4  ]: Writing injected SQL for node "model.za_payment_risk.finsurvreport_daily"
+[0m10:53:36.491531 [debug] [Thread-3  ]: Began executing node model.za_payment_risk.corridor_exposure
+[0m10:53:36.497707 [debug] [Thread-4  ]: Began executing node model.za_payment_risk.finsurvreport_daily
+[0m10:53:36.509345 [debug] [Thread-4  ]: Writing runtime sql for node "model.za_payment_risk.finsurvreport_daily"
+[0m10:53:36.510688 [debug] [Thread-3  ]: Writing runtime sql for node "model.za_payment_risk.corridor_exposure"
+[0m10:53:36.511251 [debug] [Thread-3  ]: Using duckdb connection "model.za_payment_risk.corridor_exposure"
+[0m10:53:36.511491 [debug] [Thread-3  ]: On model.za_payment_risk.corridor_exposure: BEGIN
+[0m10:53:36.511720 [debug] [Thread-4  ]: Using duckdb connection "model.za_payment_risk.finsurvreport_daily"
+[0m10:53:36.511929 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m10:53:36.512142 [debug] [Thread-4  ]: On model.za_payment_risk.finsurvreport_daily: BEGIN
+[0m10:53:36.512462 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m10:53:36.512752 [debug] [Thread-3  ]: SQL status: OK in 0.001 seconds
+[0m10:53:36.512955 [debug] [Thread-3  ]: Using duckdb connection "model.za_payment_risk.corridor_exposure"
+[0m10:53:36.513169 [debug] [Thread-4  ]: SQL status: OK in 0.001 seconds
+[0m10:53:36.513395 [debug] [Thread-3  ]: On model.za_payment_risk.corridor_exposure: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "node_id": "model.za_payment_risk.corridor_exposure"} */
+
+  
+    
+    
+
+    create  table
+      "za_payments"."main"."corridor_exposure__dbt_tmp"
+  
+    as (
+      -- corridor_exposure.sql
+-- ZAR volume and risk distribution by destination country.
+
+select
+    cast(transaction_at as date)        as report_date,
+    beneficiary_country,
+
+    count(*)                            as transaction_count,
+    round(sum(amount_zar), 2)           as total_volume_zar,
+    round(avg(amount_zar), 2)           as avg_transaction_zar,
+    round(max(amount_zar), 2)           as max_transaction_zar,
+
+    count(*) filter (where is_critical) as critical_count,
+    count(*) filter (where requires_sar) as sar_count,
+    round(
+        count(*) filter (where compliance_passed) * 100.0
+        / nullif(count(*), 0)
+    , 2)                                as pass_rate_pct
+
+from "za_payments"."main"."stg_payments"
+group by 1, 2
+order by report_date desc, total_volume_zar desc
+    );
+  
+  
+[0m10:53:36.513631 [debug] [Thread-4  ]: Using duckdb connection "model.za_payment_risk.finsurvreport_daily"
+[0m10:53:36.514914 [debug] [Thread-4  ]: On model.za_payment_risk.finsurvreport_daily: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "node_id": "model.za_payment_risk.finsurvreport_daily"} */
+
+  
+    
+    
+
+    create  table
+      "za_payments"."main"."finsurvreport_daily__dbt_tmp"
+  
+    as (
+      -- finsurvreport_daily.sql
+-- Gold layer: daily FinSurv compliance summary per bank.
+-- Maps directly to SARB FinSurv daily submission requirements.
+
+with daily as (
+
+    select
+        cast(transaction_at as date)    as report_date,
+        bank_code,
+        beneficiary_country,
+        bop_category_code,
+        risk_band,
+        compliance_passed,
+        requires_sar,
+        finsurvreportable,
+        is_ada_breached,
+        is_critical,
+        amount_zar,
+        violation_count
+
+    from "za_payments"."main"."stg_payments"
+
+)
+
+select
+    report_date,
+    bank_code,
+
+    -- Volume
+    count(*)                                                as total_transactions,
+    count(*) filter (where finsurvreportable)               as reportable_transactions,
+    round(sum(amount_zar), 2)                               as total_volume_zar,
+    round(avg(amount_zar), 2)                               as avg_transaction_zar,
+
+    -- Compliance
+    count(*) filter (where compliance_passed)               as passed_count,
+    count(*) filter (where not compliance_passed)           as failed_count,
+    round(
+        count(*) filter (where compliance_passed) * 100.0
+        / nullif(count(*), 0)
+    , 2)                                                    as compliance_pass_rate_pct,
+
+    -- Risk distribution
+    count(*) filter (where risk_band = 'LOW')               as risk_low_count,
+    count(*) filter (where risk_band = 'MEDIUM')            as risk_medium_count,
+    count(*) filter (where risk_band = 'HIGH')              as risk_high_count,
+    count(*) filter (where risk_band = 'CRITICAL')          as risk_critical_count,
+
+    -- ADA
+    count(*) filter (where is_ada_breached)                 as ada_breach_count,
+    round(sum(amount_zar) filter (where is_ada_breached), 2) as ada_breach_volume_zar,
+
+    -- SAR
+    count(*) filter (where requires_sar)                    as sar_required_count,
+
+    -- Violations
+    sum(violation_count)                                    as total_violations,
+
+    current_timestamp                                       as generated_at
+
+from daily
+group by 1, 2
+order by report_date desc, total_volume_zar desc
+    );
+  
+  
+[0m10:53:36.530366 [debug] [Thread-3  ]: SQL status: OK in 0.017 seconds
+[0m10:53:36.530619 [debug] [Thread-4  ]: SQL status: OK in 0.015 seconds
+[0m10:53:36.532714 [debug] [Thread-3  ]: Using duckdb connection "model.za_payment_risk.corridor_exposure"
+[0m10:53:36.534681 [debug] [Thread-4  ]: Using duckdb connection "model.za_payment_risk.finsurvreport_daily"
+[0m10:53:36.534940 [debug] [Thread-3  ]: On model.za_payment_risk.corridor_exposure: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "node_id": "model.za_payment_risk.corridor_exposure"} */
+alter table "za_payments"."main"."corridor_exposure__dbt_tmp" rename to "corridor_exposure"
+[0m10:53:36.535208 [debug] [Thread-4  ]: On model.za_payment_risk.finsurvreport_daily: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "node_id": "model.za_payment_risk.finsurvreport_daily"} */
+alter table "za_payments"."main"."finsurvreport_daily__dbt_tmp" rename to "finsurvreport_daily"
+[0m10:53:36.535599 [debug] [Thread-3  ]: SQL status: OK in 0.000 seconds
+[0m10:53:36.538395 [debug] [Thread-3  ]: On model.za_payment_risk.corridor_exposure: COMMIT
+[0m10:53:36.538619 [debug] [Thread-4  ]: SQL status: OK in 0.003 seconds
+[0m10:53:36.538829 [debug] [Thread-3  ]: Using duckdb connection "model.za_payment_risk.corridor_exposure"
+[0m10:53:36.539724 [debug] [Thread-4  ]: On model.za_payment_risk.finsurvreport_daily: COMMIT
+[0m10:53:36.539938 [debug] [Thread-3  ]: On model.za_payment_risk.corridor_exposure: COMMIT
+[0m10:53:36.540150 [debug] [Thread-4  ]: Using duckdb connection "model.za_payment_risk.finsurvreport_daily"
+[0m10:53:36.540403 [debug] [Thread-4  ]: On model.za_payment_risk.finsurvreport_daily: COMMIT
+[0m10:53:36.540721 [debug] [Thread-3  ]: SQL status: OK in 0.000 seconds
+[0m10:53:36.542295 [debug] [Thread-3  ]: Using duckdb connection "model.za_payment_risk.corridor_exposure"
+[0m10:53:36.542507 [debug] [Thread-4  ]: SQL status: OK in 0.002 seconds
+[0m10:53:36.542709 [debug] [Thread-3  ]: On model.za_payment_risk.corridor_exposure: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "node_id": "model.za_payment_risk.corridor_exposure"} */
+
+      drop table if exists "za_payments"."main"."corridor_exposure__dbt_backup" cascade
+    
+[0m10:53:36.544335 [debug] [Thread-4  ]: Using duckdb connection "model.za_payment_risk.finsurvreport_daily"
+[0m10:53:36.544624 [debug] [Thread-4  ]: On model.za_payment_risk.finsurvreport_daily: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "node_id": "model.za_payment_risk.finsurvreport_daily"} */
+
+      drop table if exists "za_payments"."main"."finsurvreport_daily__dbt_backup" cascade
+    
+[0m10:53:36.544877 [debug] [Thread-3  ]: SQL status: OK in 0.000 seconds
+[0m10:53:36.545587 [debug] [Thread-3  ]: On model.za_payment_risk.corridor_exposure: Close
+[0m10:53:36.545800 [debug] [Thread-4  ]: SQL status: OK in 0.001 seconds
+[0m10:53:36.546147 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'addbab88-ae83-4d62-ae79-54d685bad628', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ec1b610>]}
+[0m10:53:36.546819 [debug] [Thread-4  ]: On model.za_payment_risk.finsurvreport_daily: Close
+[0m10:53:36.547202 [info ] [Thread-3  ]: 2 of 3 OK created sql table model main.corridor_exposure ....................... [[32mOK[0m in 0.06s]
+[0m10:53:36.547529 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'addbab88-ae83-4d62-ae79-54d685bad628', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ec27520>]}
+[0m10:53:36.547827 [debug] [Thread-3  ]: Finished running node model.za_payment_risk.corridor_exposure
+[0m10:53:36.548165 [info ] [Thread-4  ]: 3 of 3 OK created sql table model main.finsurvreport_daily ..................... [[32mOK[0m in 0.06s]
+[0m10:53:36.548532 [debug] [Thread-4  ]: Finished running node model.za_payment_risk.finsurvreport_daily
+[0m10:53:36.549115 [debug] [MainThread]: Using duckdb connection "master"
+[0m10:53:36.549301 [debug] [MainThread]: On master: BEGIN
+[0m10:53:36.549455 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m10:53:36.549706 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m10:53:36.549884 [debug] [MainThread]: On master: COMMIT
+[0m10:53:36.550048 [debug] [MainThread]: Using duckdb connection "master"
+[0m10:53:36.550199 [debug] [MainThread]: On master: COMMIT
+[0m10:53:36.550435 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m10:53:36.550632 [debug] [MainThread]: On master: Close
+[0m10:53:36.550862 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:53:36.551047 [debug] [MainThread]: Connection 'model.za_payment_risk.stg_payments' was properly closed.
+[0m10:53:36.551212 [debug] [MainThread]: Connection 'list_za_payments_main' was properly closed.
+[0m10:53:36.551370 [debug] [MainThread]: Connection 'model.za_payment_risk.corridor_exposure' was properly closed.
+[0m10:53:36.551514 [debug] [MainThread]: Connection 'model.za_payment_risk.finsurvreport_daily' was properly closed.
+[0m10:53:36.551715 [info ] [MainThread]: 
+[0m10:53:36.551911 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 0.19 seconds (0.19s).
+[0m10:53:36.552505 [debug] [MainThread]: Command end result
+[0m10:53:36.567322 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/manifest.json
+[0m10:53:36.568492 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/semantic_manifest.json
+[0m10:53:36.572345 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/run_results.json
+[0m10:53:36.572538 [info ] [MainThread]: 
+[0m10:53:36.572769 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:53:36.572956 [info ] [MainThread]: 
+[0m10:53:36.573164 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m10:53:36.574772 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.8700204, "process_in_blocks": "0", "process_kernel_time": 0.192005, "process_mem_max_rss": "184958976", "process_out_blocks": "0", "process_user_time": 2.295603}
+[0m10:53:36.575000 [debug] [MainThread]: Command `dbt run` succeeded at 10:53:36.574959 after 0.87 seconds
+[0m10:53:36.575222 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ce07790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e0952b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cf52c10>]}
+[0m10:53:36.575431 [debug] [MainThread]: Flushing usage events
+[0m10:53:37.612119 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:54:15.088962 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109041040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a0cc910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a0cc730>]}
+
+
+============================== 10:54:15.091201 | bbfd7ca1-13ad-4161-a7fd-cd824871941d ==============================
+[0m10:54:15.091201 [info ] [MainThread]: Running with dbt=1.10.23
+[0m10:54:15.091561 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'log_path': '/Users/tshepotau/za-payment-risk-pipeline/dbt_project/logs', 'empty': 'None', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'target_path': 'None', 'debug': 'False', 'use_colors': 'True', 'partial_parse': 'True', 'static_parser': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt test --profiles-dir .', 'printer_width': '80', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'log_format': 'default', 'quiet': 'False', 'version_check': 'True', 'log_cache_events': 'False', 'no_print': 'None', 'profiles_dir': '.'}
+[0m10:54:15.091797 [info ] [MainThread]: This version of dbt is deprecated and no longer receives regular patches, including for known bugs. We recommend upgrading to a newer supported version of dbt: https://docs.getdbt.com/docs/dbt-versions
+[0m10:54:15.092011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecated_version_invocation', 'label': 'bbfd7ca1-13ad-4161-a7fd-cd824871941d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109041040>]}
+[0m10:54:15.216596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bbfd7ca1-13ad-4161-a7fd-cd824871941d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a0a9c10>]}
+[0m10:54:15.250711 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bbfd7ca1-13ad-4161-a7fd-cd824871941d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a1b8520>]}
+[0m10:54:15.251840 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m10:54:15.319841 [debug] [MainThread]: checksum: 2b1352ea083ab2415ad0dbf54db2d1ac6054af1cb939f9d756e37438b9e9a7cf, vars: {}, profile: , target: , version: 1.10.23
+[0m10:54:15.460425 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:54:15.460695 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:54:15.464859 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.za_payment_risk.intermediate
+[0m10:54:15.501527 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bbfd7ca1-13ad-4161-a7fd-cd824871941d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a6ef130>]}
+[0m10:54:15.571274 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/manifest.json
+[0m10:54:15.572264 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/semantic_manifest.json
+[0m10:54:15.585411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bbfd7ca1-13ad-4161-a7fd-cd824871941d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a869b50>]}
+[0m10:54:15.585691 [info ] [MainThread]: Found 1 seed, 3 models, 5 data tests, 1 source, 456 macros
+[0m10:54:15.585917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bbfd7ca1-13ad-4161-a7fd-cd824871941d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a6d7ac0>]}
+[0m10:54:15.586783 [info ] [MainThread]: 
+[0m10:54:15.586999 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m10:54:15.587186 [info ] [MainThread]: 
+[0m10:54:15.587472 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m10:54:15.590463 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_za_payments_main'
+[0m10:54:15.597122 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_za_payments_main_raw'
+[0m10:54:15.624373 [debug] [ThreadPool]: Using duckdb connection "list_za_payments_main"
+[0m10:54:15.624618 [debug] [ThreadPool]: Using duckdb connection "list_za_payments_main_raw"
+[0m10:54:15.624813 [debug] [ThreadPool]: On list_za_payments_main: BEGIN
+[0m10:54:15.624999 [debug] [ThreadPool]: On list_za_payments_main_raw: BEGIN
+[0m10:54:15.625174 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:54:15.625343 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:54:15.631588 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m10:54:15.631820 [debug] [ThreadPool]: Using duckdb connection "list_za_payments_main"
+[0m10:54:15.632019 [debug] [ThreadPool]: SQL status: OK in 0.007 seconds
+[0m10:54:15.632232 [debug] [ThreadPool]: On list_za_payments_main: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "connection_name": "list_za_payments_main"} */
+select
+      'za_payments' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'za_payments'
+  
+[0m10:54:15.632441 [debug] [ThreadPool]: Using duckdb connection "list_za_payments_main_raw"
+[0m10:54:15.632706 [debug] [ThreadPool]: On list_za_payments_main_raw: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "connection_name": "list_za_payments_main_raw"} */
+select
+      'za_payments' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_raw'
+    and lower(table_catalog) = 'za_payments'
+  
+[0m10:54:15.639372 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m10:54:15.639635 [debug] [ThreadPool]: SQL status: OK in 0.007 seconds
+[0m10:54:15.640337 [debug] [ThreadPool]: On list_za_payments_main_raw: ROLLBACK
+[0m10:54:15.641022 [debug] [ThreadPool]: On list_za_payments_main: ROLLBACK
+[0m10:54:15.642551 [debug] [ThreadPool]: Failed to rollback 'list_za_payments_main_raw'
+[0m10:54:15.642739 [debug] [ThreadPool]: On list_za_payments_main_raw: Close
+[0m10:54:15.643015 [debug] [ThreadPool]: Failed to rollback 'list_za_payments_main'
+[0m10:54:15.643292 [debug] [ThreadPool]: On list_za_payments_main: Close
+[0m10:54:15.643966 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bbfd7ca1-13ad-4161-a7fd-cd824871941d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109990dc0>]}
+[0m10:54:15.644226 [debug] [MainThread]: Using duckdb connection "master"
+[0m10:54:15.644392 [debug] [MainThread]: On master: BEGIN
+[0m10:54:15.644544 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:54:15.644820 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m10:54:15.644978 [debug] [MainThread]: On master: COMMIT
+[0m10:54:15.645135 [debug] [MainThread]: Using duckdb connection "master"
+[0m10:54:15.645286 [debug] [MainThread]: On master: COMMIT
+[0m10:54:15.645526 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m10:54:15.645696 [debug] [MainThread]: On master: Close
+[0m10:54:15.646982 [debug] [Thread-1  ]: Began running node test.za_payment_risk.source_not_null_raw_payments_amount_zar.2061070f26
+[0m10:54:15.647210 [debug] [Thread-2  ]: Began running node test.za_payment_risk.source_not_null_raw_payments_bop_category_code.ab771232c0
+[0m10:54:15.647619 [debug] [Thread-3  ]: Began running node test.za_payment_risk.source_not_null_raw_payments_risk_band.60227ae1cb
+[0m10:54:15.647872 [debug] [Thread-4  ]: Began running node test.za_payment_risk.source_not_null_raw_payments_transaction_id.8610465cda
+[0m10:54:15.647431 [info ] [Thread-1  ]: 1 of 5 START test source_not_null_raw_payments_amount_zar ...................... [RUN]
+[0m10:54:15.648157 [info ] [Thread-2  ]: 2 of 5 START test source_not_null_raw_payments_bop_category_code ............... [RUN]
+[0m10:54:15.648420 [info ] [Thread-3  ]: 3 of 5 START test source_not_null_raw_payments_risk_band ....................... [RUN]
+[0m10:54:15.648669 [info ] [Thread-4  ]: 4 of 5 START test source_not_null_raw_payments_transaction_id .................. [RUN]
+[0m10:54:15.648951 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_za_payments_main, now test.za_payment_risk.source_not_null_raw_payments_amount_zar.2061070f26)
+[0m10:54:15.649188 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly list_za_payments_main_raw, now test.za_payment_risk.source_not_null_raw_payments_bop_category_code.ab771232c0)
+[0m10:54:15.649453 [debug] [Thread-3  ]: Acquiring new duckdb connection 'test.za_payment_risk.source_not_null_raw_payments_risk_band.60227ae1cb'
+[0m10:54:15.649704 [debug] [Thread-4  ]: Acquiring new duckdb connection 'test.za_payment_risk.source_not_null_raw_payments_transaction_id.8610465cda'
+[0m10:54:15.649909 [debug] [Thread-1  ]: Began compiling node test.za_payment_risk.source_not_null_raw_payments_amount_zar.2061070f26
+[0m10:54:15.650116 [debug] [Thread-2  ]: Began compiling node test.za_payment_risk.source_not_null_raw_payments_bop_category_code.ab771232c0
+[0m10:54:15.650314 [debug] [Thread-3  ]: Began compiling node test.za_payment_risk.source_not_null_raw_payments_risk_band.60227ae1cb
+[0m10:54:15.650509 [debug] [Thread-4  ]: Began compiling node test.za_payment_risk.source_not_null_raw_payments_transaction_id.8610465cda
+[0m10:54:15.661152 [debug] [Thread-1  ]: Writing injected SQL for node "test.za_payment_risk.source_not_null_raw_payments_amount_zar.2061070f26"
+[0m10:54:15.663704 [debug] [Thread-2  ]: Writing injected SQL for node "test.za_payment_risk.source_not_null_raw_payments_bop_category_code.ab771232c0"
+[0m10:54:15.666186 [debug] [Thread-3  ]: Writing injected SQL for node "test.za_payment_risk.source_not_null_raw_payments_risk_band.60227ae1cb"
+[0m10:54:15.668881 [debug] [Thread-4  ]: Writing injected SQL for node "test.za_payment_risk.source_not_null_raw_payments_transaction_id.8610465cda"
+[0m10:54:15.669533 [debug] [Thread-2  ]: Began executing node test.za_payment_risk.source_not_null_raw_payments_bop_category_code.ab771232c0
+[0m10:54:15.669758 [debug] [Thread-1  ]: Began executing node test.za_payment_risk.source_not_null_raw_payments_amount_zar.2061070f26
+[0m10:54:15.669961 [debug] [Thread-3  ]: Began executing node test.za_payment_risk.source_not_null_raw_payments_risk_band.60227ae1cb
+[0m10:54:15.675856 [debug] [Thread-4  ]: Began executing node test.za_payment_risk.source_not_null_raw_payments_transaction_id.8610465cda
+[0m10:54:15.681719 [debug] [Thread-2  ]: Writing runtime sql for node "test.za_payment_risk.source_not_null_raw_payments_bop_category_code.ab771232c0"
+[0m10:54:15.683500 [debug] [Thread-1  ]: Writing runtime sql for node "test.za_payment_risk.source_not_null_raw_payments_amount_zar.2061070f26"
+[0m10:54:15.685328 [debug] [Thread-3  ]: Writing runtime sql for node "test.za_payment_risk.source_not_null_raw_payments_risk_band.60227ae1cb"
+[0m10:54:15.686996 [debug] [Thread-4  ]: Writing runtime sql for node "test.za_payment_risk.source_not_null_raw_payments_transaction_id.8610465cda"
+[0m10:54:15.687577 [debug] [Thread-1  ]: Using duckdb connection "test.za_payment_risk.source_not_null_raw_payments_amount_zar.2061070f26"
+[0m10:54:15.687840 [debug] [Thread-1  ]: On test.za_payment_risk.source_not_null_raw_payments_amount_zar.2061070f26: BEGIN
+[0m10:54:15.688074 [debug] [Thread-3  ]: Using duckdb connection "test.za_payment_risk.source_not_null_raw_payments_risk_band.60227ae1cb"
+[0m10:54:15.688317 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m10:54:15.688558 [debug] [Thread-2  ]: Using duckdb connection "test.za_payment_risk.source_not_null_raw_payments_bop_category_code.ab771232c0"
+[0m10:54:15.688782 [debug] [Thread-3  ]: On test.za_payment_risk.source_not_null_raw_payments_risk_band.60227ae1cb: BEGIN
+[0m10:54:15.688993 [debug] [Thread-4  ]: Using duckdb connection "test.za_payment_risk.source_not_null_raw_payments_transaction_id.8610465cda"
+[0m10:54:15.689311 [debug] [Thread-2  ]: On test.za_payment_risk.source_not_null_raw_payments_bop_category_code.ab771232c0: BEGIN
+[0m10:54:15.689526 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m10:54:15.689732 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m10:54:15.689938 [debug] [Thread-4  ]: On test.za_payment_risk.source_not_null_raw_payments_transaction_id.8610465cda: BEGIN
+[0m10:54:15.690143 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+[0m10:54:15.690400 [debug] [Thread-1  ]: Using duckdb connection "test.za_payment_risk.source_not_null_raw_payments_amount_zar.2061070f26"
+[0m10:54:15.690604 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m10:54:15.690799 [debug] [Thread-3  ]: SQL status: OK in 0.001 seconds
+[0m10:54:15.691085 [debug] [Thread-1  ]: On test.za_payment_risk.source_not_null_raw_payments_amount_zar.2061070f26: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "node_id": "test.za_payment_risk.source_not_null_raw_payments_amount_zar.2061070f26"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select amount_zar
+from "za_payments"."main_raw"."sample_payments"
+where amount_zar is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:54:15.691348 [debug] [Thread-2  ]: SQL status: OK in 0.001 seconds
+[0m10:54:15.691572 [debug] [Thread-3  ]: Using duckdb connection "test.za_payment_risk.source_not_null_raw_payments_risk_band.60227ae1cb"
+[0m10:54:15.691779 [debug] [Thread-4  ]: SQL status: OK in 0.001 seconds
+[0m10:54:15.692039 [debug] [Thread-2  ]: Using duckdb connection "test.za_payment_risk.source_not_null_raw_payments_bop_category_code.ab771232c0"
+[0m10:54:15.692277 [debug] [Thread-3  ]: On test.za_payment_risk.source_not_null_raw_payments_risk_band.60227ae1cb: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "node_id": "test.za_payment_risk.source_not_null_raw_payments_risk_band.60227ae1cb"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select risk_band
+from "za_payments"."main_raw"."sample_payments"
+where risk_band is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:54:15.692516 [debug] [Thread-4  ]: Using duckdb connection "test.za_payment_risk.source_not_null_raw_payments_transaction_id.8610465cda"
+[0m10:54:15.692747 [debug] [Thread-2  ]: On test.za_payment_risk.source_not_null_raw_payments_bop_category_code.ab771232c0: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "node_id": "test.za_payment_risk.source_not_null_raw_payments_bop_category_code.ab771232c0"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select bop_category_code
+from "za_payments"."main_raw"."sample_payments"
+where bop_category_code is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:54:15.692976 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m10:54:15.693245 [debug] [Thread-4  ]: On test.za_payment_risk.source_not_null_raw_payments_transaction_id.8610465cda: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "node_id": "test.za_payment_risk.source_not_null_raw_payments_transaction_id.8610465cda"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select transaction_id
+from "za_payments"."main_raw"."sample_payments"
+where transaction_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:54:15.693506 [debug] [Thread-3  ]: SQL status: OK in 0.001 seconds
+[0m10:54:15.693762 [debug] [Thread-2  ]: SQL status: OK in 0.000 seconds
+[0m10:54:15.696206 [debug] [Thread-1  ]: On test.za_payment_risk.source_not_null_raw_payments_amount_zar.2061070f26: ROLLBACK
+[0m10:54:15.697066 [debug] [Thread-3  ]: On test.za_payment_risk.source_not_null_raw_payments_risk_band.60227ae1cb: ROLLBACK
+[0m10:54:15.697799 [debug] [Thread-2  ]: On test.za_payment_risk.source_not_null_raw_payments_bop_category_code.ab771232c0: ROLLBACK
+[0m10:54:15.698018 [debug] [Thread-4  ]: SQL status: OK in 0.004 seconds
+[0m10:54:15.698273 [debug] [Thread-1  ]: Failed to rollback 'test.za_payment_risk.source_not_null_raw_payments_amount_zar.2061070f26'
+[0m10:54:15.698505 [debug] [Thread-3  ]: Failed to rollback 'test.za_payment_risk.source_not_null_raw_payments_risk_band.60227ae1cb'
+[0m10:54:15.698755 [debug] [Thread-2  ]: Failed to rollback 'test.za_payment_risk.source_not_null_raw_payments_bop_category_code.ab771232c0'
+[0m10:54:15.699479 [debug] [Thread-4  ]: On test.za_payment_risk.source_not_null_raw_payments_transaction_id.8610465cda: ROLLBACK
+[0m10:54:15.699695 [debug] [Thread-1  ]: On test.za_payment_risk.source_not_null_raw_payments_amount_zar.2061070f26: Close
+[0m10:54:15.699909 [debug] [Thread-3  ]: On test.za_payment_risk.source_not_null_raw_payments_risk_band.60227ae1cb: Close
+[0m10:54:15.700126 [debug] [Thread-2  ]: On test.za_payment_risk.source_not_null_raw_payments_bop_category_code.ab771232c0: Close
+[0m10:54:15.700373 [debug] [Thread-4  ]: Failed to rollback 'test.za_payment_risk.source_not_null_raw_payments_transaction_id.8610465cda'
+[0m10:54:15.700701 [info ] [Thread-1  ]: 1 of 5 PASS source_not_null_raw_payments_amount_zar ............................ [[32mPASS[0m in 0.05s]
+[0m10:54:15.701061 [info ] [Thread-3  ]: 3 of 5 PASS source_not_null_raw_payments_risk_band ............................. [[32mPASS[0m in 0.05s]
+[0m10:54:15.701426 [info ] [Thread-2  ]: 2 of 5 PASS source_not_null_raw_payments_bop_category_code ..................... [[32mPASS[0m in 0.05s]
+[0m10:54:15.701682 [debug] [Thread-4  ]: On test.za_payment_risk.source_not_null_raw_payments_transaction_id.8610465cda: Close
+[0m10:54:15.701967 [debug] [Thread-1  ]: Finished running node test.za_payment_risk.source_not_null_raw_payments_amount_zar.2061070f26
+[0m10:54:15.702248 [debug] [Thread-3  ]: Finished running node test.za_payment_risk.source_not_null_raw_payments_risk_band.60227ae1cb
+[0m10:54:15.702521 [debug] [Thread-2  ]: Finished running node test.za_payment_risk.source_not_null_raw_payments_bop_category_code.ab771232c0
+[0m10:54:15.702826 [info ] [Thread-4  ]: 4 of 5 PASS source_not_null_raw_payments_transaction_id ........................ [[32mPASS[0m in 0.05s]
+[0m10:54:15.703086 [debug] [Thread-1  ]: Began running node test.za_payment_risk.source_unique_raw_payments_transaction_id.36a131dc76
+[0m10:54:15.703513 [debug] [Thread-4  ]: Finished running node test.za_payment_risk.source_not_null_raw_payments_transaction_id.8610465cda
+[0m10:54:15.703725 [info ] [Thread-1  ]: 5 of 5 START test source_unique_raw_payments_transaction_id .................... [RUN]
+[0m10:54:15.704029 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.za_payment_risk.source_not_null_raw_payments_amount_zar.2061070f26, now test.za_payment_risk.source_unique_raw_payments_transaction_id.36a131dc76)
+[0m10:54:15.704231 [debug] [Thread-1  ]: Began compiling node test.za_payment_risk.source_unique_raw_payments_transaction_id.36a131dc76
+[0m10:54:15.708645 [debug] [Thread-1  ]: Writing injected SQL for node "test.za_payment_risk.source_unique_raw_payments_transaction_id.36a131dc76"
+[0m10:54:15.709124 [debug] [Thread-1  ]: Began executing node test.za_payment_risk.source_unique_raw_payments_transaction_id.36a131dc76
+[0m10:54:15.710864 [debug] [Thread-1  ]: Writing runtime sql for node "test.za_payment_risk.source_unique_raw_payments_transaction_id.36a131dc76"
+[0m10:54:15.711246 [debug] [Thread-1  ]: Using duckdb connection "test.za_payment_risk.source_unique_raw_payments_transaction_id.36a131dc76"
+[0m10:54:15.711453 [debug] [Thread-1  ]: On test.za_payment_risk.source_unique_raw_payments_transaction_id.36a131dc76: BEGIN
+[0m10:54:15.711636 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m10:54:15.711955 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m10:54:15.712157 [debug] [Thread-1  ]: Using duckdb connection "test.za_payment_risk.source_unique_raw_payments_transaction_id.36a131dc76"
+[0m10:54:15.712357 [debug] [Thread-1  ]: On test.za_payment_risk.source_unique_raw_payments_transaction_id.36a131dc76: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "node_id": "test.za_payment_risk.source_unique_raw_payments_transaction_id.36a131dc76"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    transaction_id as unique_field,
+    count(*) as n_records
+
+from "za_payments"."main_raw"."sample_payments"
+where transaction_id is not null
+group by transaction_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:54:15.713484 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m10:54:15.714327 [debug] [Thread-1  ]: On test.za_payment_risk.source_unique_raw_payments_transaction_id.36a131dc76: ROLLBACK
+[0m10:54:15.714563 [debug] [Thread-1  ]: Failed to rollback 'test.za_payment_risk.source_unique_raw_payments_transaction_id.36a131dc76'
+[0m10:54:15.714752 [debug] [Thread-1  ]: On test.za_payment_risk.source_unique_raw_payments_transaction_id.36a131dc76: Close
+[0m10:54:15.715062 [info ] [Thread-1  ]: 5 of 5 PASS source_unique_raw_payments_transaction_id .......................... [[32mPASS[0m in 0.01s]
+[0m10:54:15.715376 [debug] [Thread-1  ]: Finished running node test.za_payment_risk.source_unique_raw_payments_transaction_id.36a131dc76
+[0m10:54:15.715988 [debug] [MainThread]: Using duckdb connection "master"
+[0m10:54:15.716183 [debug] [MainThread]: On master: BEGIN
+[0m10:54:15.716342 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m10:54:15.716617 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m10:54:15.716792 [debug] [MainThread]: On master: COMMIT
+[0m10:54:15.716953 [debug] [MainThread]: Using duckdb connection "master"
+[0m10:54:15.717105 [debug] [MainThread]: On master: COMMIT
+[0m10:54:15.717351 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m10:54:15.717567 [debug] [MainThread]: On master: Close
+[0m10:54:15.717800 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:54:15.717989 [debug] [MainThread]: Connection 'test.za_payment_risk.source_unique_raw_payments_transaction_id.36a131dc76' was properly closed.
+[0m10:54:15.718157 [debug] [MainThread]: Connection 'test.za_payment_risk.source_not_null_raw_payments_bop_category_code.ab771232c0' was properly closed.
+[0m10:54:15.718391 [debug] [MainThread]: Connection 'test.za_payment_risk.source_not_null_raw_payments_risk_band.60227ae1cb' was properly closed.
+[0m10:54:15.718555 [debug] [MainThread]: Connection 'test.za_payment_risk.source_not_null_raw_payments_transaction_id.8610465cda' was properly closed.
+[0m10:54:15.718739 [info ] [MainThread]: 
+[0m10:54:15.718929 [info ] [MainThread]: Finished running 5 data tests in 0 hours 0 minutes and 0.13 seconds (0.13s).
+[0m10:54:15.719567 [debug] [MainThread]: Command end result
+[0m10:54:15.753087 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/manifest.json
+[0m10:54:15.754320 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/semantic_manifest.json
+[0m10:54:15.758745 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/run_results.json
+[0m10:54:15.758953 [info ] [MainThread]: 
+[0m10:54:15.759196 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:54:15.759387 [info ] [MainThread]: 
+[0m10:54:15.759593 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=5
+[0m10:54:15.761161 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 0.7162482, "process_in_blocks": "0", "process_kernel_time": 0.192077, "process_mem_max_rss": "166887424", "process_out_blocks": "0", "process_user_time": 2.186222}
+[0m10:54:15.761398 [debug] [MainThread]: Command `dbt test` succeeded at 10:54:15.761356 after 0.72 seconds
+[0m10:54:15.761619 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109041040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092e6d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a0a9c10>]}
+[0m10:54:15.761841 [debug] [MainThread]: Flushing usage events
+[0m10:54:16.854475 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:55:25.236406 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cf451f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dfd08e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dfd0700>]}
+
+
+============================== 10:55:25.239600 | 1747c9fd-0bd4-4266-b73c-e211ebdb09fd ==============================
+[0m10:55:25.239600 [info ] [MainThread]: Running with dbt=1.10.23
+[0m10:55:25.239990 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'no_print': 'None', 'profiles_dir': '.', 'use_experimental_parser': 'False', 'log_path': '/Users/tshepotau/za-payment-risk-pipeline/dbt_project/logs', 'log_format': 'default', 'invocation_command': 'dbt docs generate --profiles-dir .', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'version_check': 'True', 'use_colors': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'cache_selected_only': 'False'}
+[0m10:55:25.240240 [info ] [MainThread]: This version of dbt is deprecated and no longer receives regular patches, including for known bugs. We recommend upgrading to a newer supported version of dbt: https://docs.getdbt.com/docs/dbt-versions
+[0m10:55:25.240459 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecated_version_invocation', 'label': '1747c9fd-0bd4-4266-b73c-e211ebdb09fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cf451f0>]}
+[0m10:55:25.451805 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1747c9fd-0bd4-4266-b73c-e211ebdb09fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b6c08e0>]}
+[0m10:55:25.486503 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1747c9fd-0bd4-4266-b73c-e211ebdb09fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e0c81f0>]}
+[0m10:55:25.488099 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m10:55:25.562214 [debug] [MainThread]: checksum: 2b1352ea083ab2415ad0dbf54db2d1ac6054af1cb939f9d756e37438b9e9a7cf, vars: {}, profile: , target: , version: 1.10.23
+[0m10:55:25.723417 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:55:25.723689 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:55:25.727838 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.za_payment_risk.intermediate
+[0m10:55:25.764959 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1747c9fd-0bd4-4266-b73c-e211ebdb09fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e5f1130>]}
+[0m10:55:25.778382 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1747c9fd-0bd4-4266-b73c-e211ebdb09fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e644520>]}
+[0m10:55:25.778679 [info ] [MainThread]: Found 1 seed, 3 models, 5 data tests, 1 source, 456 macros
+[0m10:55:25.778899 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1747c9fd-0bd4-4266-b73c-e211ebdb09fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e6444c0>]}
+[0m10:55:25.779866 [info ] [MainThread]: 
+[0m10:55:25.780082 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m10:55:25.780266 [info ] [MainThread]: 
+[0m10:55:25.780580 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m10:55:25.783578 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_za_payments_main'
+[0m10:55:25.783901 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_za_payments_main_raw'
+[0m10:55:25.824409 [debug] [ThreadPool]: Using duckdb connection "list_za_payments_main"
+[0m10:55:25.824661 [debug] [ThreadPool]: Using duckdb connection "list_za_payments_main_raw"
+[0m10:55:25.824882 [debug] [ThreadPool]: On list_za_payments_main: BEGIN
+[0m10:55:25.825074 [debug] [ThreadPool]: On list_za_payments_main_raw: BEGIN
+[0m10:55:25.825273 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:55:25.825460 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:55:25.837686 [debug] [ThreadPool]: SQL status: OK in 0.012 seconds
+[0m10:55:25.837924 [debug] [ThreadPool]: Using duckdb connection "list_za_payments_main"
+[0m10:55:25.838121 [debug] [ThreadPool]: SQL status: OK in 0.013 seconds
+[0m10:55:25.838340 [debug] [ThreadPool]: On list_za_payments_main: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "connection_name": "list_za_payments_main"} */
+select
+      'za_payments' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'za_payments'
+  
+[0m10:55:25.838547 [debug] [ThreadPool]: Using duckdb connection "list_za_payments_main_raw"
+[0m10:55:25.839013 [debug] [ThreadPool]: On list_za_payments_main_raw: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "connection_name": "list_za_payments_main_raw"} */
+select
+      'za_payments' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_raw'
+    and lower(table_catalog) = 'za_payments'
+  
+[0m10:55:25.855961 [debug] [ThreadPool]: SQL status: OK in 0.017 seconds
+[0m10:55:25.856362 [debug] [ThreadPool]: SQL status: OK in 0.017 seconds
+[0m10:55:25.857124 [debug] [ThreadPool]: On list_za_payments_main: ROLLBACK
+[0m10:55:25.857762 [debug] [ThreadPool]: On list_za_payments_main_raw: ROLLBACK
+[0m10:55:25.859563 [debug] [ThreadPool]: Failed to rollback 'list_za_payments_main'
+[0m10:55:25.859786 [debug] [ThreadPool]: Failed to rollback 'list_za_payments_main_raw'
+[0m10:55:25.859963 [debug] [ThreadPool]: On list_za_payments_main: Close
+[0m10:55:25.860139 [debug] [ThreadPool]: On list_za_payments_main_raw: Close
+[0m10:55:25.860893 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1747c9fd-0bd4-4266-b73c-e211ebdb09fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e54c280>]}
+[0m10:55:25.862460 [debug] [Thread-1  ]: Began running node model.za_payment_risk.stg_payments
+[0m10:55:25.862705 [debug] [Thread-2  ]: Began running node seed.za_payment_risk.sample_payments
+[0m10:55:25.862953 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_za_payments_main, now model.za_payment_risk.stg_payments)
+[0m10:55:25.863183 [debug] [Thread-3  ]: Began running node test.za_payment_risk.source_not_null_raw_payments_amount_zar.2061070f26
+[0m10:55:25.863403 [debug] [Thread-4  ]: Began running node test.za_payment_risk.source_not_null_raw_payments_bop_category_code.ab771232c0
+[0m10:55:25.863636 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly list_za_payments_main_raw, now seed.za_payment_risk.sample_payments)
+[0m10:55:25.863863 [debug] [Thread-1  ]: Began compiling node model.za_payment_risk.stg_payments
+[0m10:55:25.864138 [debug] [Thread-3  ]: Acquiring new duckdb connection 'test.za_payment_risk.source_not_null_raw_payments_amount_zar.2061070f26'
+[0m10:55:25.864414 [debug] [Thread-4  ]: Acquiring new duckdb connection 'test.za_payment_risk.source_not_null_raw_payments_bop_category_code.ab771232c0'
+[0m10:55:25.864622 [debug] [Thread-2  ]: Began compiling node seed.za_payment_risk.sample_payments
+[0m10:55:25.869905 [debug] [Thread-1  ]: Writing injected SQL for node "model.za_payment_risk.stg_payments"
+[0m10:55:25.870140 [debug] [Thread-3  ]: Began compiling node test.za_payment_risk.source_not_null_raw_payments_amount_zar.2061070f26
+[0m10:55:25.870354 [debug] [Thread-4  ]: Began compiling node test.za_payment_risk.source_not_null_raw_payments_bop_category_code.ab771232c0
+[0m10:55:25.871728 [debug] [Thread-2  ]: Began executing node seed.za_payment_risk.sample_payments
+[0m10:55:25.879004 [debug] [Thread-3  ]: Writing injected SQL for node "test.za_payment_risk.source_not_null_raw_payments_amount_zar.2061070f26"
+[0m10:55:25.881572 [debug] [Thread-4  ]: Writing injected SQL for node "test.za_payment_risk.source_not_null_raw_payments_bop_category_code.ab771232c0"
+[0m10:55:25.882005 [debug] [Thread-2  ]: Finished running node seed.za_payment_risk.sample_payments
+[0m10:55:25.882234 [debug] [Thread-1  ]: Began executing node model.za_payment_risk.stg_payments
+[0m10:55:25.882592 [debug] [Thread-2  ]: Began running node test.za_payment_risk.source_not_null_raw_payments_risk_band.60227ae1cb
+[0m10:55:25.883020 [debug] [Thread-1  ]: Finished running node model.za_payment_risk.stg_payments
+[0m10:55:25.883310 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly seed.za_payment_risk.sample_payments, now test.za_payment_risk.source_not_null_raw_payments_risk_band.60227ae1cb)
+[0m10:55:25.883576 [debug] [Thread-3  ]: Began executing node test.za_payment_risk.source_not_null_raw_payments_amount_zar.2061070f26
+[0m10:55:25.883816 [debug] [Thread-1  ]: Began running node test.za_payment_risk.source_not_null_raw_payments_transaction_id.8610465cda
+[0m10:55:25.884031 [debug] [Thread-4  ]: Began executing node test.za_payment_risk.source_not_null_raw_payments_bop_category_code.ab771232c0
+[0m10:55:25.884280 [debug] [Thread-2  ]: Began compiling node test.za_payment_risk.source_not_null_raw_payments_risk_band.60227ae1cb
+[0m10:55:25.884690 [debug] [Thread-3  ]: Finished running node test.za_payment_risk.source_not_null_raw_payments_amount_zar.2061070f26
+[0m10:55:25.884909 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.za_payment_risk.stg_payments, now test.za_payment_risk.source_not_null_raw_payments_transaction_id.8610465cda)
+[0m10:55:25.885288 [debug] [Thread-4  ]: Finished running node test.za_payment_risk.source_not_null_raw_payments_bop_category_code.ab771232c0
+[0m10:55:25.887848 [debug] [Thread-2  ]: Writing injected SQL for node "test.za_payment_risk.source_not_null_raw_payments_risk_band.60227ae1cb"
+[0m10:55:25.888093 [debug] [Thread-3  ]: Began running node test.za_payment_risk.source_unique_raw_payments_transaction_id.36a131dc76
+[0m10:55:25.888333 [debug] [Thread-1  ]: Began compiling node test.za_payment_risk.source_not_null_raw_payments_transaction_id.8610465cda
+[0m10:55:25.888569 [debug] [Thread-4  ]: Began running node model.za_payment_risk.corridor_exposure
+[0m10:55:25.888858 [debug] [Thread-3  ]: Re-using an available connection from the pool (formerly test.za_payment_risk.source_not_null_raw_payments_amount_zar.2061070f26, now test.za_payment_risk.source_unique_raw_payments_transaction_id.36a131dc76)
+[0m10:55:25.891455 [debug] [Thread-1  ]: Writing injected SQL for node "test.za_payment_risk.source_not_null_raw_payments_transaction_id.8610465cda"
+[0m10:55:25.891727 [debug] [Thread-4  ]: Re-using an available connection from the pool (formerly test.za_payment_risk.source_not_null_raw_payments_bop_category_code.ab771232c0, now model.za_payment_risk.corridor_exposure)
+[0m10:55:25.891970 [debug] [Thread-3  ]: Began compiling node test.za_payment_risk.source_unique_raw_payments_transaction_id.36a131dc76
+[0m10:55:25.892183 [debug] [Thread-2  ]: Began executing node test.za_payment_risk.source_not_null_raw_payments_risk_band.60227ae1cb
+[0m10:55:25.892426 [debug] [Thread-4  ]: Began compiling node model.za_payment_risk.corridor_exposure
+[0m10:55:25.896159 [debug] [Thread-3  ]: Writing injected SQL for node "test.za_payment_risk.source_unique_raw_payments_transaction_id.36a131dc76"
+[0m10:55:25.896563 [debug] [Thread-2  ]: Finished running node test.za_payment_risk.source_not_null_raw_payments_risk_band.60227ae1cb
+[0m10:55:25.898325 [debug] [Thread-4  ]: Writing injected SQL for node "model.za_payment_risk.corridor_exposure"
+[0m10:55:25.898552 [debug] [Thread-1  ]: Began executing node test.za_payment_risk.source_not_null_raw_payments_transaction_id.8610465cda
+[0m10:55:25.898803 [debug] [Thread-2  ]: Began running node model.za_payment_risk.finsurvreport_daily
+[0m10:55:25.899268 [debug] [Thread-1  ]: Finished running node test.za_payment_risk.source_not_null_raw_payments_transaction_id.8610465cda
+[0m10:55:25.899509 [debug] [Thread-3  ]: Began executing node test.za_payment_risk.source_unique_raw_payments_transaction_id.36a131dc76
+[0m10:55:25.899749 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly test.za_payment_risk.source_not_null_raw_payments_risk_band.60227ae1cb, now model.za_payment_risk.finsurvreport_daily)
+[0m10:55:25.900196 [debug] [Thread-3  ]: Finished running node test.za_payment_risk.source_unique_raw_payments_transaction_id.36a131dc76
+[0m10:55:25.900429 [debug] [Thread-4  ]: Began executing node model.za_payment_risk.corridor_exposure
+[0m10:55:25.900637 [debug] [Thread-2  ]: Began compiling node model.za_payment_risk.finsurvreport_daily
+[0m10:55:25.901049 [debug] [Thread-4  ]: Finished running node model.za_payment_risk.corridor_exposure
+[0m10:55:25.903520 [debug] [Thread-2  ]: Writing injected SQL for node "model.za_payment_risk.finsurvreport_daily"
+[0m10:55:25.903997 [debug] [Thread-2  ]: Began executing node model.za_payment_risk.finsurvreport_daily
+[0m10:55:25.904347 [debug] [Thread-2  ]: Finished running node model.za_payment_risk.finsurvreport_daily
+[0m10:55:25.904808 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:55:25.904989 [debug] [MainThread]: Connection 'test.za_payment_risk.source_not_null_raw_payments_transaction_id.8610465cda' was properly closed.
+[0m10:55:25.905148 [debug] [MainThread]: Connection 'model.za_payment_risk.finsurvreport_daily' was properly closed.
+[0m10:55:25.905299 [debug] [MainThread]: Connection 'test.za_payment_risk.source_unique_raw_payments_transaction_id.36a131dc76' was properly closed.
+[0m10:55:25.905445 [debug] [MainThread]: Connection 'model.za_payment_risk.corridor_exposure' was properly closed.
+[0m10:55:25.906250 [debug] [MainThread]: Command end result
+[0m10:55:25.975480 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/manifest.json
+[0m10:55:25.976856 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/semantic_manifest.json
+[0m10:55:25.981054 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/run_results.json
+[0m10:55:25.984191 [debug] [MainThread]: Acquiring new duckdb connection 'generate_catalog'
+[0m10:55:25.984372 [info ] [MainThread]: Building catalog
+[0m10:55:25.990003 [debug] [ThreadPool]: Acquiring new duckdb connection 'za_payments.information_schema'
+[0m10:55:25.994196 [debug] [ThreadPool]: Using duckdb connection "za_payments.information_schema"
+[0m10:55:25.994398 [debug] [ThreadPool]: On za_payments.information_schema: BEGIN
+[0m10:55:25.994565 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:55:25.994918 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m10:55:25.995081 [debug] [ThreadPool]: Using duckdb connection "za_payments.information_schema"
+[0m10:55:25.995272 [debug] [ThreadPool]: On za_payments.information_schema: /* {"app": "dbt", "dbt_version": "1.10.23", "profile_name": "za_payment_risk", "target_name": "dev", "connection_name": "za_payments.information_schema"} */
+with relations AS (
+      select
+        t.table_name
+        , t.database_name
+        , t.schema_name
+        , 'BASE TABLE' as table_type
+        , t.comment as table_comment
+      from duckdb_tables() t
+      WHERE t.database_name = 'za_payments'
+      UNION ALL
+      SELECT v.view_name as table_name
+      , v.database_name
+      , v.schema_name
+      , 'VIEW' as table_type
+      , v.comment as table_comment
+      from duckdb_views() v
+      WHERE v.database_name = 'za_payments'
+    )
+    select
+        'za_payments' as table_database,
+        r.schema_name as table_schema,
+        r.table_name,
+        r.table_type,
+        r.table_comment,
+        c.column_name,
+        c.column_index as column_index,
+        c.data_type as column_type,
+        c.comment as column_comment,
+        NULL as table_owner
+    FROM relations r JOIN duckdb_columns() c ON r.schema_name = c.schema_name AND r.table_name = c.table_name
+    WHERE (upper(r.schema_name) = upper('main') or upper(r.schema_name) = upper('main_raw'))
+    ORDER BY
+        r.schema_name,
+        r.table_name,
+        c.column_index
+[0m10:55:26.002536 [debug] [ThreadPool]: SQL status: OK in 0.007 seconds
+[0m10:55:26.006027 [debug] [ThreadPool]: On za_payments.information_schema: ROLLBACK
+[0m10:55:26.006260 [debug] [ThreadPool]: Failed to rollback 'za_payments.information_schema'
+[0m10:55:26.006427 [debug] [ThreadPool]: On za_payments.information_schema: Close
+[0m10:55:26.015347 [debug] [MainThread]: Wrote artifact CatalogArtifact to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/catalog.json
+[0m10:55:26.029315 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/manifest.json
+[0m10:55:26.030207 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/semantic_manifest.json
+[0m10:55:26.030438 [info ] [MainThread]: Catalog written to /Users/tshepotau/za-payment-risk-pipeline/dbt_project/target/catalog.json
+[0m10:55:26.032013 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 0.8398993, "process_in_blocks": "0", "process_kernel_time": 0.213583, "process_mem_max_rss": "165658624", "process_out_blocks": "0", "process_user_time": 2.184133}
+[0m10:55:26.032257 [debug] [MainThread]: Command `dbt docs generate` succeeded at 10:55:26.032215 after 0.84 seconds
+[0m10:55:26.032437 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m10:55:26.032589 [debug] [MainThread]: Connection 'za_payments.information_schema' was properly closed.
+[0m10:55:26.032773 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cf451f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e6cf100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ebd2ac0>]}
+[0m10:55:26.032984 [debug] [MainThread]: Flushing usage events
+[0m10:55:27.094275 [debug] [MainThread]: An error was encountered while trying to flush usage events
