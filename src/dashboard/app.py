@@ -251,7 +251,7 @@ if selected_banks:
 if selected_bands:
     df = df[df["risk_band"].isin(selected_bands)]
 if show_sar_only:
-    df = df[df["requires_sar"] == True]
+    df = df[df["requires_sar"]]
 
 # Page header
 st.markdown("""
@@ -464,3 +464,4 @@ st.markdown(
 if auto_refresh:
     time.sleep(5)
     st.rerun()
+    
