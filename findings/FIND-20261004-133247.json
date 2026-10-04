@@ -1,0 +1,27 @@
+{
+  "report_id": "FIND-20261004-133247",
+  "transaction_id": "TXN-20261004-CD8050A0",
+  "risk_band": "CRITICAL",
+  "risk_score": 100,
+  "requires_sar": true,
+  "violations": [
+    {
+      "rule_id": "ADA_LIMIT_BREACH",
+      "passed": false,
+      "severity": "CRITICAL",
+      "score_contribution": 100,
+      "finding": "ADA breach: cumulative R1,063,762.14 exceeds R1,000,000 annual discretionary allowance.",
+      "field_ref": "ada_ytd_used,amount_zar"
+    }
+  ],
+  "originator_history": {
+    "total_transactions": 0,
+    "total_volume": 0.0,
+    "previous_violations": 0,
+    "ada_ytd": 0.0,
+    "ada_utilisation_pct": 0.0
+  },
+  "ai_analysis": "Compliance Analysis Report\n\nTransaction ID: TXN-20261004-CD8050A0\n\nSummary:\n\nThe flagged cross-border payment from CABLZAJJ to the USA, with a risk score of 100/100 and risk band CRITICAL, poses significant concerns due to the severe breach of the Annual Discretionary Allowance (ADA). The originator has no recorded transactions and no prior violations, which may indicate a lack of established compliance practices. However, the high risk score and critical risk band warrant further scrutiny, as this transaction may be indicative of a more substantial non-compliance issue. Based on the current information, I assess the risk as HIGH, and recommend immediate investigation and review to determine the originator's intentions and ensure adherence to regulatory requirements.\n\nPrimary Risk Concern: The primary risk concern with this transaction is the severe breach of the Annual Discretionary Allowance (ADA), exceeding the allowed cumulative limit of R1,000,000.\n\nOriginator History: The originator history does not display a clear pattern of concern, as there are no recorded transactions and no prior violations. However, the lack of compliance practices or established risk management processes is concerning.\n\nOverall Risk Assessment: I assess the risk associated with this transaction as HIGH, due to the critical risk band and severe ADA breach. Further investigation is required to determine the originator's intentions and ensure adherence to regulatory requirements.",
+  "recommended_action": "BLOCK transaction and FILE SUSPICIOUS ACTIVITY REPORT immediately. Transaction to USA has triggered mandatory SAR filing requirements. Escalate to Chief Compliance Officer within 1 hour.",
+  "investigated_at": "2026-10-04T13:32:47.347659+00:00"
+}

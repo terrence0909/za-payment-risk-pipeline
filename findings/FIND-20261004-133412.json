@@ -1,0 +1,27 @@
+{
+  "report_id": "FIND-20261004-133412",
+  "transaction_id": "TXN-20261004-92D111D3",
+  "risk_band": "HIGH",
+  "risk_score": 57,
+  "requires_sar": false,
+  "violations": [
+    {
+      "rule_id": "ADA_APPROACH_WARNING",
+      "passed": false,
+      "severity": "HIGH",
+      "score_contribution": 50,
+      "finding": "ADA utilisation at 99.2% \u2014 within 15% of limit.",
+      "field_ref": "ada_ytd_used"
+    }
+  ],
+  "originator_history": {
+    "total_transactions": 0,
+    "total_volume": 0.0,
+    "previous_violations": 0,
+    "ada_ytd": 0.0,
+    "ada_utilisation_pct": 0.0
+  },
+  "ai_analysis": "Compliance Analysis Report\n\nTransaction ID: TXN-20261004-92D111D3\n\nPrimary Risk Concern:\nThe primary risk concern with this transaction is the High Risk Band classification, which warrants scrutiny due to the significant amount of R196,681.17 being transacted across international borders.\n\nOriginator History:\nThe originator history suggests a low-risk profile, as there are no previous violations and no transactions have been recorded, indicating a newcomer to the system. The low ADA utilisation rate also suggests that the originator is likely to be a low-risk customer.\n\nOverall Risk Assessment:\nBased on the provided information, the risk assessment is HIGH, due to the significant amount being transacted. However, the low-risk originator history and the absence of previous violations suggest that the risk is not unusually high, warranting further review and monitoring to ensure that the originator's risk profile does not change.",
+  "recommended_action": "FLAG for enhanced due diligence. Request source-of-funds documentation from originator before processing. Review within 4 hours.",
+  "investigated_at": "2026-10-04T13:34:12.237433+00:00"
+}

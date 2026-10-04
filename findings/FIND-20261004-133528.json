@@ -1,0 +1,27 @@
+{
+  "report_id": "FIND-20261004-133528",
+  "transaction_id": "TXN-20261004-EBDB03DF",
+  "risk_band": "HIGH",
+  "risk_score": 57,
+  "requires_sar": false,
+  "violations": [
+    {
+      "rule_id": "ADA_APPROACH_WARNING",
+      "passed": false,
+      "severity": "HIGH",
+      "score_contribution": 50,
+      "finding": "ADA utilisation at 94.3% \u2014 within 15% of limit.",
+      "field_ref": "ada_ytd_used"
+    }
+  ],
+  "originator_history": {
+    "total_transactions": 0,
+    "total_volume": 0.0,
+    "previous_violations": 0,
+    "ada_ytd": 0.0,
+    "ada_utilisation_pct": 0.0
+  },
+  "ai_analysis": "Compliance Analysis Report\n\nTransaction ID: TXN-20261004-EBDB03DF\n\nPrimary Risk Concern:\nThe primary risk concern with this transaction is the HIGH risk score, indicating a significant likelihood of illicit activity. However, the primary risk concern is the rule violation related to the Automated Debt Arrangement (ADA) approach, which indicates a high level of ADA utilisation at 94.3%. This suggests a potential risk of the originator being over-relying on debt management solutions, potentially leading to negative financial consequences.\n\nOriginator History:\nThe originator's history shows a low total volume transacted and no previous violations, which suggests a low level of risk. However, the high ADA utilisation rate indicates a potential issue with the originator's financial management.\n\nOverall Risk Assessment:\nGiven the HIGH risk score and the high ADA utilisation rate, I assess this transaction as High Risk. The originator's history, while low-risk, does not mitigate the primary risk concern related to the ADA approach. Further due diligence is required to fully understand the originator's financial situation and ensure compliance with regulatory requirements.",
+  "recommended_action": "FLAG for enhanced due diligence. Request source-of-funds documentation from originator before processing. Review within 4 hours.",
+  "investigated_at": "2026-10-04T13:35:28.879081+00:00"
+}

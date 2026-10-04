@@ -1,0 +1,27 @@
+{
+  "report_id": "FIND-20261004-133309",
+  "transaction_id": "TXN-20261004-67A509FE",
+  "risk_band": "CRITICAL",
+  "risk_score": 100,
+  "requires_sar": true,
+  "violations": [
+    {
+      "rule_id": "ADA_LIMIT_BREACH",
+      "passed": false,
+      "severity": "CRITICAL",
+      "score_contribution": 100,
+      "finding": "ADA breach: cumulative R1,214,138.30 exceeds R1,000,000 annual discretionary allowance.",
+      "field_ref": "ada_ytd_used,amount_zar"
+    }
+  ],
+  "originator_history": {
+    "total_transactions": 0,
+    "total_volume": 0.0,
+    "previous_violations": 0,
+    "ada_ytd": 0.0,
+    "ada_utilisation_pct": 0.0
+  },
+  "ai_analysis": "Compliance Analysis Report\n\nTransaction Details:\n\nTransaction ID: TXN-20261004-67A509FE\nBank: INVEZMJJ\nDestination country: USA\nAmount: R266,373.27\nRisk score: 100 / 100\nRisk band: CRITICAL\n\nPrimary Risk Concern:\nThe primary risk concern with this transaction is the potential breach of the annual discretionary allowance (ADA) limit, as the cumulative transactions exceed the allowed threshold of R1,000,000.\n\nOriginator History Analysis:\nThe originator's history indicates a lack of previous transactions, which may suggest a new or high-risk customer. However, there is no evidence of a pattern of ADA breaches or other risk indicators, as the originator has not utilized ADA in the past year.\n\nOverall Risk Assessment:\nGiven the critical risk score and the significant breach of the ADA limit, I assess the risk of this transaction as HIGH. The originator's history does not provide a clear indication of a pattern of risk, and further investigation is necessary to determine the intent behind this transaction and the originator's overall risk profile.",
+  "recommended_action": "BLOCK transaction and FILE SUSPICIOUS ACTIVITY REPORT immediately. Transaction to USA has triggered mandatory SAR filing requirements. Escalate to Chief Compliance Officer within 1 hour.",
+  "investigated_at": "2026-10-04T13:33:09.161013+00:00"
+}

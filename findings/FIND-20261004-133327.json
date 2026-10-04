@@ -1,0 +1,27 @@
+{
+  "report_id": "FIND-20261004-133327",
+  "transaction_id": "TXN-20261004-A9A70B44",
+  "risk_band": "CRITICAL",
+  "risk_score": 100,
+  "requires_sar": true,
+  "violations": [
+    {
+      "rule_id": "ADA_LIMIT_BREACH",
+      "passed": false,
+      "severity": "CRITICAL",
+      "score_contribution": 100,
+      "finding": "ADA breach: cumulative R1,157,748.74 exceeds R1,000,000 annual discretionary allowance.",
+      "field_ref": "ada_ytd_used,amount_zar"
+    }
+  ],
+  "originator_history": {
+    "total_transactions": 0,
+    "total_volume": 0.0,
+    "previous_violations": 0,
+    "ada_ytd": 0.0,
+    "ada_utilisation_pct": 0.0
+  },
+  "ai_analysis": "Compliance Analysis Report\n\nTransaction Details: TXN-20261004-A9A70B44\n\nPrimary Risk Concern:\nThe primary risk concern with this transaction is the potential for money laundering or terrorist financing due to the significant risk score of 100/100 and the critical risk band, indicating a high likelihood of illicit activity. The high risk score is further exacerbated by the breach of the annual discretionary allowance (ADA) limit, which suggests an attempt to circumvent regulatory controls.\n\nOriginator History:\nThe originator history indicates a clean record with no previous violations, no transactions on record, and a zero transaction volume. This suggests that the originator has not been previously identified as a high-risk entity, and the current transaction appears to be an isolated incident. However, the breach of the ADA limit raises concerns about the originator's adherence to regulatory requirements.\n\nOverall Risk Assessment:\nGiven the high risk score and critical risk band, this transaction warrants close scrutiny. While the originator history is otherwise clean, the breach of the ADA limit necessitates further investigation into the originator's activities and potential connections to illicit activity. I recommend that the transaction be flagged for manual review and that additional information be requested from the originator to determine the legitimacy of the transaction.",
+  "recommended_action": "BLOCK transaction and FILE SUSPICIOUS ACTIVITY REPORT immediately. Transaction to SGP has triggered mandatory SAR filing requirements. Escalate to Chief Compliance Officer within 1 hour.",
+  "investigated_at": "2026-10-04T13:33:27.557727+00:00"
+}

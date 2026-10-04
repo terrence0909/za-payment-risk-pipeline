@@ -1,0 +1,27 @@
+{
+  "report_id": "FIND-20261004-133254",
+  "transaction_id": "TXN-20261004-3802D4B2",
+  "risk_band": "CRITICAL",
+  "risk_score": 100,
+  "requires_sar": true,
+  "violations": [
+    {
+      "rule_id": "ADA_LIMIT_BREACH",
+      "passed": false,
+      "severity": "CRITICAL",
+      "score_contribution": 100,
+      "finding": "ADA breach: cumulative R1,336,402.49 exceeds R1,000,000 annual discretionary allowance.",
+      "field_ref": "ada_ytd_used,amount_zar"
+    }
+  ],
+  "originator_history": {
+    "total_transactions": 0,
+    "total_volume": 0.0,
+    "previous_violations": 0,
+    "ada_ytd": 0.0,
+    "ada_utilisation_pct": 0.0
+  },
+  "ai_analysis": "Compliance Analysis Report\n\nTransaction ID: TXN-20261004-3802D4B2\n\nPrimary Risk Concern:\nThe primary risk concern with this transaction is the critical risk score and Ada limit breach, indicating a high risk of money laundering or terrorist financing. The cumulative transaction amount exceeds the annual discretionary allowance, suggesting a significant risk of non-compliance with our bank's Anti-Money Laundering (AML) and Combating the Financing of Terrorism (CFT) policies.\n\nOriginator History:\nThe originator's history is limited to a single transaction with no prior violations, indicating a potential lack of established relationships or patterns of suspicious activity. However, the lack of transaction volume and total transactions on record may be indicative of a new or low-volume originator.\n\nRisk Assessment:\nBased on the provided information, my overall risk assessment is that this transaction poses a high risk of non-compliance with our AML/CFT policies. The critical risk score, Ada limit breach, and limited originator history all contribute to this assessment. Further investigation and due diligence are required to determine the true nature of the transaction and the originator.",
+  "recommended_action": "BLOCK transaction and FILE SUSPICIOUS ACTIVITY REPORT immediately. Transaction to NLD has triggered mandatory SAR filing requirements. Escalate to Chief Compliance Officer within 1 hour.",
+  "investigated_at": "2026-10-04T13:32:54.315626+00:00"
+}

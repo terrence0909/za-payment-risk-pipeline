@@ -1,0 +1,35 @@
+{
+  "report_id": "FIND-20261004-133214",
+  "transaction_id": "TXN-20261004-FE40D46A",
+  "risk_band": "CRITICAL",
+  "risk_score": 100,
+  "requires_sar": true,
+  "violations": [
+    {
+      "rule_id": "ADA_LIMIT_BREACH",
+      "passed": false,
+      "severity": "CRITICAL",
+      "score_contribution": 100,
+      "finding": "ADA breach: cumulative R1,090,481.85 exceeds R1,000,000 annual discretionary allowance.",
+      "field_ref": "ada_ytd_used,amount_zar"
+    },
+    {
+      "rule_id": "INVALID_BOP_CODE",
+      "passed": false,
+      "severity": "HIGH",
+      "score_contribution": 50,
+      "finding": "BOP code 'ABC' not in SARB-approved set. FinSurv submission will be rejected.",
+      "field_ref": "bop_category_code"
+    }
+  ],
+  "originator_history": {
+    "total_transactions": 0,
+    "total_volume": 0.0,
+    "previous_violations": 0,
+    "ada_ytd": 0.0,
+    "ada_utilisation_pct": 0.0
+  },
+  "ai_analysis": "Compliance Analysis Report\n\nTransaction ID: TXN-20261004-FE40D46A\n\nPrimary Risk Concern:\nThe primary risk concern with this transaction is the critical risk score and multiple rule violations, specifically the ADA breach and invalid BOP code. These violations indicate a high level of risk, which may be associated with money laundering or terrorist financing activities.\n\nOriginator History:\nThe originator history does not show a pattern of concern, as there are no previous violations and the originator has no transactions on record. However, it is essential to note that this is the first transaction for the originator, and a thorough risk assessment should be conducted for the entire originator profile.\n\nOverall Risk Assessment:\nBased on the risk score, rule violations, and originator history, I assess the transaction as HIGH RISK. Further investigation and due diligence are required to verify the legitimacy of the transaction and ensure compliance with regulatory requirements.",
+  "recommended_action": "BLOCK transaction and FILE SUSPICIOUS ACTIVITY REPORT immediately. Transaction to SGP has triggered mandatory SAR filing requirements. Escalate to Chief Compliance Officer within 1 hour.",
+  "investigated_at": "2026-10-04T13:32:14.104847+00:00"
+}

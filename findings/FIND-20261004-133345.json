@@ -1,0 +1,27 @@
+{
+  "report_id": "FIND-20261004-133345",
+  "transaction_id": "TXN-20261004-9258907A",
+  "risk_band": "CRITICAL",
+  "risk_score": 100,
+  "requires_sar": true,
+  "violations": [
+    {
+      "rule_id": "ADA_LIMIT_BREACH",
+      "passed": false,
+      "severity": "CRITICAL",
+      "score_contribution": 100,
+      "finding": "ADA breach: cumulative R1,215,524.10 exceeds R1,000,000 annual discretionary allowance.",
+      "field_ref": "ada_ytd_used,amount_zar"
+    }
+  ],
+  "originator_history": {
+    "total_transactions": 0,
+    "total_volume": 0.0,
+    "previous_violations": 0,
+    "ada_ytd": 0.0,
+    "ada_utilisation_pct": 0.0
+  },
+  "ai_analysis": "Compliance Analysis Report\n\nTransaction ID: TXN-20261004-9258907A\n\nPrimary Risk Concern:\nThe primary risk concern with this transaction is the critical risk score and Ada Limit Breach rule violation, indicating a high risk of money laundering or terrorist financing due to the significant breach of the annual discretionary allowance.\n\nOriginator History:\nThe originator has no recorded transactions, which may suggest a low risk profile. However, the lack of transactions and volume transacted does not provide sufficient information to determine if this is a one-off incident or an emerging risk pattern.\n\nOverall Risk Assessment:\nGiven the critical risk score and Ada Limit Breach violation, I assess the overall risk of this transaction as HIGH. While the originator history is limited, the significant breach of the annual discretionary allowance warrants further investigation and potential escalation to higher risk teams.",
+  "recommended_action": "BLOCK transaction and FILE SUSPICIOUS ACTIVITY REPORT immediately. Transaction to DEU has triggered mandatory SAR filing requirements. Escalate to Chief Compliance Officer within 1 hour.",
+  "investigated_at": "2026-10-04T13:33:45.823032+00:00"
+}

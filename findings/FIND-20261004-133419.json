@@ -1,0 +1,27 @@
+{
+  "report_id": "FIND-20261004-133419",
+  "transaction_id": "TXN-20261004-61CD7102",
+  "risk_band": "CRITICAL",
+  "risk_score": 100,
+  "requires_sar": true,
+  "violations": [
+    {
+      "rule_id": "ADA_LIMIT_BREACH",
+      "passed": false,
+      "severity": "CRITICAL",
+      "score_contribution": 100,
+      "finding": "ADA breach: cumulative R1,282,204.83 exceeds R1,000,000 annual discretionary allowance.",
+      "field_ref": "ada_ytd_used,amount_zar"
+    }
+  ],
+  "originator_history": {
+    "total_transactions": 0,
+    "total_volume": 0.0,
+    "previous_violations": 0,
+    "ada_ytd": 0.0,
+    "ada_utilisation_pct": 0.0
+  },
+  "ai_analysis": "Compliance Analysis Report\n\nTransaction ID: TXN-20261004-61CD7102\n\nPrimary Risk Concern:\nThe primary risk concern with this transaction is the significant breach of the annual discretionary allowance (ADA) limit, exceeding R1,000,000 by a cumulative R1,282,204.83. This flagging highlights a high-risk transaction due to the originator's potential inability to manage their transactions.\n\nOriginator History:\nThe originator's history shows a total of 0 transactions on record, indicating a lack of previous activity. This lack of activity, combined with the high-risk transaction, raises concerns about the originator's ability to manage their transactions. However, the absence of any previous violations or high-risk transactions is noted.\n\nOverall Risk Assessment:\nBased on the information provided, I assess the risk associated with this transaction as HIGH. The critical risk score, combined with the significant ADA breach, warrants further investigation and potential blocking of the transaction to mitigate potential money laundering or terrorism financing risks.",
+  "recommended_action": "BLOCK transaction and FILE SUSPICIOUS ACTIVITY REPORT immediately. Transaction to SGP has triggered mandatory SAR filing requirements. Escalate to Chief Compliance Officer within 1 hour.",
+  "investigated_at": "2026-10-04T13:34:19.958835+00:00"
+}

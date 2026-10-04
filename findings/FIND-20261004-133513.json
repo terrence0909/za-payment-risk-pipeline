@@ -1,0 +1,27 @@
+{
+  "report_id": "FIND-20261004-133513",
+  "transaction_id": "TXN-20261004-084AB489",
+  "risk_band": "CRITICAL",
+  "risk_score": 100,
+  "requires_sar": true,
+  "violations": [
+    {
+      "rule_id": "ADA_LIMIT_BREACH",
+      "passed": false,
+      "severity": "CRITICAL",
+      "score_contribution": 100,
+      "finding": "ADA breach: cumulative R1,155,558.78 exceeds R1,000,000 annual discretionary allowance.",
+      "field_ref": "ada_ytd_used,amount_zar"
+    }
+  ],
+  "originator_history": {
+    "total_transactions": 0,
+    "total_volume": 0.0,
+    "previous_violations": 0,
+    "ada_ytd": 0.0,
+    "ada_utilisation_pct": 0.0
+  },
+  "ai_analysis": "Compliance Analysis Report:\n\nTransaction ID: TXN-20261004-084AB489\n\nSummary:\n\nThe primary risk concern with this transaction is the critical risk score and the breach of the annual discretionary allowance (ADA) limit, exceeding R1,000,000. The originator history does not demonstrate a pattern of concern, as the originator has no transactions on record, no previous violations, and zero ADA utilisation. However, the critical risk score and ADA breach highlight a high-risk transaction that warrants further review and potential flagging. Based on the available information, I assess the overall risk as HIGH, indicating a high likelihood of adverse consequences if this transaction proceeds.\n\nRecommendations:\n\n* Flag this transaction for immediate review by senior management and the risk team.\n* Conduct additional research on the originator to determine the legitimacy of the transaction.\n* Consider implementing enhanced due diligence measures to mitigate the risk of this transaction.",
+  "recommended_action": "BLOCK transaction and FILE SUSPICIOUS ACTIVITY REPORT immediately. Transaction to NLD has triggered mandatory SAR filing requirements. Escalate to Chief Compliance Officer within 1 hour.",
+  "investigated_at": "2026-10-04T13:35:13.947329+00:00"
+}

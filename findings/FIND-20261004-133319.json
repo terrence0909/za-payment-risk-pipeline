@@ -1,0 +1,27 @@
+{
+  "report_id": "FIND-20261004-133319",
+  "transaction_id": "TXN-20261004-9A1E6F63",
+  "risk_band": "CRITICAL",
+  "risk_score": 100,
+  "requires_sar": true,
+  "violations": [
+    {
+      "rule_id": "SANCTIONED_CORRIDOR",
+      "passed": false,
+      "severity": "CRITICAL",
+      "score_contribution": 100,
+      "finding": "Destination 'IRN' is on the OFAC/UN sanctions list. Block transaction and file SAR immediately.",
+      "field_ref": "beneficiary_country"
+    }
+  ],
+  "originator_history": {
+    "total_transactions": 0,
+    "total_volume": 0.0,
+    "previous_violations": 0,
+    "ada_ytd": 0.0,
+    "ada_utilisation_pct": 0.0
+  },
+  "ai_analysis": "Compliance Analysis Report:\n\nTransaction ID: TXN-20261004-9A1E6F63\n\nThe primary risk concern with this transaction is the high risk score and critical risk band, indicating a significant likelihood of material non-compliance with our bank's anti-money laundering and combating the financing of terrorism (AML/CFT) policies. The flagged bank, ABSAZAJJJ, is listed on the OFAC/UN sanctions list, which poses a substantial reputational risk to the bank. The originator's history shows no previous violations, but the lack of any transactions on record raises concerns about the originator's identity and the potential for illicit activity. Based on these factors, I assess this transaction as HIGH-RISK and recommend immediate blocking and filing of a Suspicious Activity Report (SAR).",
+  "recommended_action": "BLOCK transaction and FILE SUSPICIOUS ACTIVITY REPORT immediately. Transaction to IRN has triggered mandatory SAR filing requirements. Escalate to Chief Compliance Officer within 1 hour.",
+  "investigated_at": "2026-10-04T13:33:19.322110+00:00"
+}

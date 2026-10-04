@@ -1,0 +1,27 @@
+{
+  "report_id": "FIND-20261004-133232",
+  "transaction_id": "TXN-20261004-EC24EF9E",
+  "risk_band": "HIGH",
+  "risk_score": 57,
+  "requires_sar": false,
+  "violations": [
+    {
+      "rule_id": "INVALID_BOP_CODE",
+      "passed": false,
+      "severity": "HIGH",
+      "score_contribution": 50,
+      "finding": "BOP code '999' not in SARB-approved set. FinSurv submission will be rejected.",
+      "field_ref": "bop_category_code"
+    }
+  ],
+  "originator_history": {
+    "total_transactions": 0,
+    "total_volume": 0.0,
+    "previous_violations": 0,
+    "ada_ytd": 0.0,
+    "ada_utilisation_pct": 0.0
+  },
+  "ai_analysis": "Compliance Analysis: TXN-20261004-EC24EF9E\n\nThe primary risk concern with this transaction is the invalid BOP code '999', which is not in the SARB-approved set. This violation is a significant risk factor, as it suggests a lack of adherence to regulatory requirements. The originator history does not provide any information that would suggest a pattern of non-compliance, as the originator has no prior transactions on record and has not exhibited any previous violations.\n\nHowever, given the high risk score and band of 57/100, this single rule violation warrants further scrutiny. Based on this, I assess the overall risk of this transaction as HIGH, as the combination of the invalid BOP code and the high risk score increases the likelihood of material non-compliance. I recommend that this transaction be rejected and further investigation be conducted to determine the root cause of the non-compliance.",
+  "recommended_action": "FLAG for enhanced due diligence. Request source-of-funds documentation from originator before processing. Review within 4 hours.",
+  "investigated_at": "2026-10-04T13:32:32.277184+00:00"
+}

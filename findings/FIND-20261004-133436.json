@@ -1,0 +1,27 @@
+{
+  "report_id": "FIND-20261004-133436",
+  "transaction_id": "TXN-20261004-97CFEBBF",
+  "risk_band": "HIGH",
+  "risk_score": 57,
+  "requires_sar": false,
+  "violations": [
+    {
+      "rule_id": "INVALID_BOP_CODE",
+      "passed": false,
+      "severity": "HIGH",
+      "score_contribution": 50,
+      "finding": "BOP code '000' not in SARB-approved set. FinSurv submission will be rejected.",
+      "field_ref": "bop_category_code"
+    }
+  ],
+  "originator_history": {
+    "total_transactions": 0,
+    "total_volume": 0.0,
+    "previous_violations": 0,
+    "ada_ytd": 0.0,
+    "ada_utilisation_pct": 0.0
+  },
+  "ai_analysis": "Compliance Analysis Report:\n\nTransaction ID: TXN-20261004-97CFEBBF\n\nThe primary risk concern with this transaction is the invalid BOP code '000', which is not in the SARB-approved set. This violation suggests that the originator may not be adhering to established regulations and guidelines, potentially increasing the risk of non-compliance.\n\nThe originator's history does not indicate a pattern of concern, as there are no previous violations or significant transactions on record. However, the low ADA utilisation rate of 0.0% and the lack of transactions on record do raise some questions about the originator's level of activity and potential for future risk.\n\nBased on the provided information, my overall risk assessment is that this transaction poses a moderate risk due to the invalid BOP code violation. Further investigation and verification of the originator's credentials and BOP code are required to determine the full extent of the risk.",
+  "recommended_action": "FLAG for enhanced due diligence. Request source-of-funds documentation from originator before processing. Review within 4 hours.",
+  "investigated_at": "2026-10-04T13:34:36.946429+00:00"
+}

@@ -1,0 +1,27 @@
+{
+  "report_id": "FIND-20261004-133226",
+  "transaction_id": "TXN-20261004-8F52C023",
+  "risk_band": "CRITICAL",
+  "risk_score": 100,
+  "requires_sar": true,
+  "violations": [
+    {
+      "rule_id": "SANCTIONED_CORRIDOR",
+      "passed": false,
+      "severity": "CRITICAL",
+      "score_contribution": 100,
+      "finding": "Destination 'IRN' is on the OFAC/UN sanctions list. Block transaction and file SAR immediately.",
+      "field_ref": "beneficiary_country"
+    }
+  ],
+  "originator_history": {
+    "total_transactions": 0,
+    "total_volume": 0.0,
+    "previous_violations": 0,
+    "ada_ytd": 0.0,
+    "ada_utilisation_pct": 0.0
+  },
+  "ai_analysis": "Compliance Analysis Report\n\nTransaction ID: TXN-20261004-8F52C023\n\nPrimary Risk Concern:\nThe primary risk concern with this transaction is the high-risk destination country, IRN, which is on the OFAC/UN sanctions list, thereby violating Rule SANCTIONED_CORRIDOR. This rule is designed to prevent transactions with countries under international sanctions to prevent funding of malicious activities.\n\nOriginator History:\nThe originator history does not show a pattern of concern, as there are no previous violations and a total transaction volume of R0.00. The originator has no recorded transactions on record, which does not indicate any suspicious activity.\n\nOverall Risk Assessment:\nBased on the risk score of 100/100 and the critical risk band, this transaction warrants a high-risk assessment. The combination of the high-risk destination country and the critical risk band justify further investigation and action, including blocking the transaction and filing a Suspicious Activity Report (SAR).",
+  "recommended_action": "BLOCK transaction and FILE SUSPICIOUS ACTIVITY REPORT immediately. Transaction to IRN has triggered mandatory SAR filing requirements. Escalate to Chief Compliance Officer within 1 hour.",
+  "investigated_at": "2026-10-04T13:32:26.637404+00:00"
+}

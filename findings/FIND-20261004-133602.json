@@ -1,0 +1,27 @@
+{
+  "report_id": "FIND-20261004-133602",
+  "transaction_id": "TXN-20261004-AA7E71D1",
+  "risk_band": "CRITICAL",
+  "risk_score": 100,
+  "requires_sar": true,
+  "violations": [
+    {
+      "rule_id": "ADA_LIMIT_BREACH",
+      "passed": false,
+      "severity": "CRITICAL",
+      "score_contribution": 100,
+      "finding": "ADA breach: cumulative R1,166,123.10 exceeds R1,000,000 annual discretionary allowance.",
+      "field_ref": "ada_ytd_used,amount_zar"
+    }
+  ],
+  "originator_history": {
+    "total_transactions": 0,
+    "total_volume": 0.0,
+    "previous_violations": 0,
+    "ada_ytd": 0.0,
+    "ada_utilisation_pct": 0.0
+  },
+  "ai_analysis": "Compliance Analysis Report\n\nTransaction ID: TXN-20261004-AA7E71D1\n\nPrimary Risk Concern:\nThe primary risk concern with this transaction is the significant breach of the annual discretionary allowance (ADA) rule, exceeding the threshold of R1,000,000. This breach poses a substantial risk to the bank's reputation, regulatory non-compliance, and potential fines.\n\nOriginator History:\nThe originator history suggests that this is the originator's first transaction, with no previous violations or indications of suspicious activity. The zero total transactions on record and zero total volume transacted provide no evidence of a pattern of concern.\n\nOverall Risk Assessment:\nGiven the critical risk score and breach of the ADA rule, I assess this transaction as a HIGH-RISK transaction that requires immediate attention and review. The originator history and lack of previous activity mitigate the risk, but the ADA breach is a significant concern that warrants thorough investigation and potential further review by senior management.",
+  "recommended_action": "BLOCK transaction and FILE SUSPICIOUS ACTIVITY REPORT immediately. Transaction to GBR has triggered mandatory SAR filing requirements. Escalate to Chief Compliance Officer within 1 hour.",
+  "investigated_at": "2026-10-04T13:36:02.659041+00:00"
+}

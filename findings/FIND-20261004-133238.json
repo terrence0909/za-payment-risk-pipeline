@@ -1,0 +1,27 @@
+{
+  "report_id": "FIND-20261004-133238",
+  "transaction_id": "TXN-20261004-8E01BEFB",
+  "risk_band": "CRITICAL",
+  "risk_score": 100,
+  "requires_sar": true,
+  "violations": [
+    {
+      "rule_id": "ADA_LIMIT_BREACH",
+      "passed": false,
+      "severity": "CRITICAL",
+      "score_contribution": 100,
+      "finding": "ADA breach: cumulative R1,175,086.24 exceeds R1,000,000 annual discretionary allowance.",
+      "field_ref": "ada_ytd_used,amount_zar"
+    }
+  ],
+  "originator_history": {
+    "total_transactions": 0,
+    "total_volume": 0.0,
+    "previous_violations": 0,
+    "ada_ytd": 0.0,
+    "ada_utilisation_pct": 0.0
+  },
+  "ai_analysis": "Compliance Analysis: TXN-20261004-8E01BEFB\n\nPrimary Risk Concern:\nThe primary risk concern with this transaction is the significant breach of the annual discretionary allowance (ADA) set by the bank, exceeding the allowed limit of R1,000,000. This breach highlights the high risk of money laundering or terrorist financing associated with the transaction.\n\nOriginator History:\nThe originator history indicates a lack of activity, with no previous transactions on record and no utilization of ADA, suggesting a new and potentially high-risk customer. However, this lack of activity does not necessarily mitigate the risk, as it is unclear whether this is an isolated incident or an indication of an ongoing risk.\n\nOverall Risk Assessment:\nBased on the risk score and risk band, this transaction is rated as CRITICAL. The breach of ADA, combined with the high risk score and destination country (USA), indicates a significant risk of illicit activity. Further investigation and due diligence on the originator and beneficiary are required to assess the true nature of the transaction.",
+  "recommended_action": "BLOCK transaction and FILE SUSPICIOUS ACTIVITY REPORT immediately. Transaction to USA has triggered mandatory SAR filing requirements. Escalate to Chief Compliance Officer within 1 hour.",
+  "investigated_at": "2026-10-04T13:32:38.665898+00:00"
+}

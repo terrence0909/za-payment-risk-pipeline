@@ -1,0 +1,43 @@
+{
+  "report_id": "FIND-20261004-133549",
+  "transaction_id": "TXN-20261004-17AE9F3F",
+  "risk_band": "CRITICAL",
+  "risk_score": 100,
+  "requires_sar": true,
+  "violations": [
+    {
+      "rule_id": "ADA_LIMIT_BREACH",
+      "passed": false,
+      "severity": "CRITICAL",
+      "score_contribution": 100,
+      "finding": "ADA breach: cumulative R1,384,891.66 exceeds R1,000,000 annual discretionary allowance.",
+      "field_ref": "ada_ytd_used,amount_zar"
+    },
+    {
+      "rule_id": "INVALID_BOP_CODE",
+      "passed": false,
+      "severity": "HIGH",
+      "score_contribution": 50,
+      "finding": "BOP code 'ABC' not in SARB-approved set. FinSurv submission will be rejected.",
+      "field_ref": "bop_category_code"
+    },
+    {
+      "rule_id": "LARGE_INDIVIDUAL_TRANSFER",
+      "passed": false,
+      "severity": "HIGH",
+      "score_contribution": 50,
+      "finding": "Individual transfer of R699,586.26 exceeds R500,000. Source-of-funds docs required.",
+      "field_ref": "amount_zar,entity_type"
+    }
+  ],
+  "originator_history": {
+    "total_transactions": 0,
+    "total_volume": 0.0,
+    "previous_violations": 0,
+    "ada_ytd": 0.0,
+    "ada_utilisation_pct": 0.0
+  },
+  "ai_analysis": "Compliance Analysis Report\n\nTransaction ID: TXN-20261004-17AE9F3F\n\nSummary:\n\nThe primary risk concern with this transaction is the critical risk score and multiple rule violations, including a breach of the annual discretionary allowance for Automatic Debit Orders (ADA) and a large individual transfer exceeding R500,000. The originator history indicates no previous violations, indicating a potential lack of risk profile, but the sudden breach of ADA limits and significant transfer amount raise concerns. Given the critical risk score and multiple rule violations, I assess this transaction as HIGH-RISK. \n\nPlease let me know if you would like me to expand on this.",
+  "recommended_action": "BLOCK transaction and FILE SUSPICIOUS ACTIVITY REPORT immediately. Transaction to USA has triggered mandatory SAR filing requirements. Escalate to Chief Compliance Officer within 1 hour.",
+  "investigated_at": "2026-10-04T13:35:49.462879+00:00"
+}

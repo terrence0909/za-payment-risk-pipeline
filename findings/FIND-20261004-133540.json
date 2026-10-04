@@ -1,0 +1,27 @@
+{
+  "report_id": "FIND-20261004-133540",
+  "transaction_id": "TXN-20261004-1FD2DDD1",
+  "risk_band": "CRITICAL",
+  "risk_score": 100,
+  "requires_sar": true,
+  "violations": [
+    {
+      "rule_id": "ADA_LIMIT_BREACH",
+      "passed": false,
+      "severity": "CRITICAL",
+      "score_contribution": 100,
+      "finding": "ADA breach: cumulative R1,360,227.56 exceeds R1,000,000 annual discretionary allowance.",
+      "field_ref": "ada_ytd_used,amount_zar"
+    }
+  ],
+  "originator_history": {
+    "total_transactions": 0,
+    "total_volume": 0.0,
+    "previous_violations": 0,
+    "ada_ytd": 0.0,
+    "ada_utilisation_pct": 0.0
+  },
+  "ai_analysis": "Compliance Analysis Report\n\nTransaction ID: TXN-20261004-1FD2DDD1\n\nThe primary risk concern with this transaction is the critical risk score of 100/100, coupled with the excessive cumulative amount of R1,360,227.56 exceeding the annual discretionary allowance of R1,000,000. This breach of the Anti-Money Laundering (AML) regulations poses a significant risk to the bank's reputation and potential exposure to regulatory fines.\n\nThe originator history is limited to zero total transactions, zero total volume transacted, and no previous violations, which does not provide sufficient information to establish a pattern of concern. However, the lack of any notable red flags or suspicious activity associated with the originator does not entirely alleviate the risk. Overall, I assess the risk associated with this transaction as HIGH, warranting further investigation and potential referral to the Compliance Committee for escalation.",
+  "recommended_action": "BLOCK transaction and FILE SUSPICIOUS ACTIVITY REPORT immediately. Transaction to CHE has triggered mandatory SAR filing requirements. Escalate to Chief Compliance Officer within 1 hour.",
+  "investigated_at": "2026-10-04T13:35:40.242010+00:00"
+}

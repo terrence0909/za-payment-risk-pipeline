@@ -1,0 +1,27 @@
+{
+  "report_id": "FIND-20261004-133500",
+  "transaction_id": "TXN-20261004-FF94620A",
+  "risk_band": "CRITICAL",
+  "risk_score": 100,
+  "requires_sar": true,
+  "violations": [
+    {
+      "rule_id": "ADA_LIMIT_BREACH",
+      "passed": false,
+      "severity": "CRITICAL",
+      "score_contribution": 100,
+      "finding": "ADA breach: cumulative R1,217,714.43 exceeds R1,000,000 annual discretionary allowance.",
+      "field_ref": "ada_ytd_used,amount_zar"
+    }
+  ],
+  "originator_history": {
+    "total_transactions": 0,
+    "total_volume": 0.0,
+    "previous_violations": 0,
+    "ada_ytd": 0.0,
+    "ada_utilisation_pct": 0.0
+  },
+  "ai_analysis": "**Compliance Analysis Report**\n\n**Transaction ID:** TXN-20261004-FF94620A\n\n**Primary Risk Concern:**\nThe primary risk concern with this transaction is the significant breach of the Annual Discretionary Allowance (ADA) limit, exceeding R1,000,000 by a cumulative amount of R1,217,714.43. This substantial deviation from the allowed amount poses a substantial risk to the bank's Anti-Money Laundering (AML) and Combating the Financing of Terrorism (CFT) objectives.\n\n**Originator History:**\nThe originator's history is limited, with no prior transactions on record and zero transactions of volume. This lack of information makes it challenging to assess the originator's past behavior, although the absence of previous violations is a positive note. Further investigation is required to determine the validity of the originator's claims and to understand the circumstances surrounding this transaction.\n\n**Overall Risk Assessment:**\nGiven the critical risk score and significant ADA breach, I assess the risk of this transaction as HIGH. The originator's history is limited, but the substantial deviation from the allowed amount warrants further scrutiny and potentially more stringent controls to be applied to this transaction.",
+  "recommended_action": "BLOCK transaction and FILE SUSPICIOUS ACTIVITY REPORT immediately. Transaction to NLD has triggered mandatory SAR filing requirements. Escalate to Chief Compliance Officer within 1 hour.",
+  "investigated_at": "2026-10-04T13:35:00.305482+00:00"
+}

@@ -1,0 +1,35 @@
+{
+  "report_id": "FIND-20261004-133339",
+  "transaction_id": "TXN-20261004-62C5B421",
+  "risk_band": "CRITICAL",
+  "risk_score": 100,
+  "requires_sar": true,
+  "violations": [
+    {
+      "rule_id": "ADA_LIMIT_BREACH",
+      "passed": false,
+      "severity": "CRITICAL",
+      "score_contribution": 100,
+      "finding": "ADA breach: cumulative R1,130,982.40 exceeds R1,000,000 annual discretionary allowance.",
+      "field_ref": "ada_ytd_used,amount_zar"
+    },
+    {
+      "rule_id": "LARGE_INDIVIDUAL_TRANSFER",
+      "passed": false,
+      "severity": "HIGH",
+      "score_contribution": 50,
+      "finding": "Individual transfer of R538,705.99 exceeds R500,000. Source-of-funds docs required.",
+      "field_ref": "amount_zar,entity_type"
+    }
+  ],
+  "originator_history": {
+    "total_transactions": 0,
+    "total_volume": 0.0,
+    "previous_violations": 0,
+    "ada_ytd": 0.0,
+    "ada_utilisation_pct": 0.0
+  },
+  "ai_analysis": "Compliance Analysis Report:\n\nTransaction Details: TXN-20261004-62C5B421\n\nPrimary Risk Concern:\nThe primary risk concern with this transaction is the high-risk score of 100/100 and critical risk band, which indicates a high likelihood of money laundering or terrorist financing. This is further compounded by the breach of the annual discretionary allowance (ADA) limit, which exceeds the allowed amount by a significant margin.\n\nOriginator History:\nThe originator's history shows no previous transactions, low total volume transacted, and zero previous violations. However, the high risk score and critical risk band suggest that the originator may be a high-risk customer, and the absence of previous transactions does not provide sufficient information to determine their risk profile.\n\nOverall Risk Assessment:\nGiven the high risk score, critical risk band, and breach of ADA limit, I assess this transaction as HIGH RISK. The originator's history provides limited insight into their risk profile, but the severity of the rule violations warrants further investigation and potentially more stringent controls to mitigate the risk of money laundering or terrorist financing.",
+  "recommended_action": "BLOCK transaction and FILE SUSPICIOUS ACTIVITY REPORT immediately. Transaction to USA has triggered mandatory SAR filing requirements. Escalate to Chief Compliance Officer within 1 hour.",
+  "investigated_at": "2026-10-04T13:33:39.729407+00:00"
+}

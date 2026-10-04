@@ -1,0 +1,27 @@
+{
+  "report_id": "FIND-20261004-133208",
+  "transaction_id": "TXN-20261004-ECA0D04C",
+  "risk_band": "CRITICAL",
+  "risk_score": 100,
+  "requires_sar": true,
+  "violations": [
+    {
+      "rule_id": "SANCTIONED_CORRIDOR",
+      "passed": false,
+      "severity": "CRITICAL",
+      "score_contribution": 100,
+      "finding": "Destination 'IRN' is on the OFAC/UN sanctions list. Block transaction and file SAR immediately.",
+      "field_ref": "beneficiary_country"
+    }
+  ],
+  "originator_history": {
+    "total_transactions": 0,
+    "total_volume": 0.0,
+    "previous_violations": 0,
+    "ada_ytd": 0.0,
+    "ada_utilisation_pct": 0.0
+  },
+  "ai_analysis": "Compliance Analysis Report\n\nTransaction ID: TXN-20261004-ECA0D04C\n\nPrimary Risk Concern:\nThe primary risk concern with this transaction is the high risk score of 100/100 and the critical risk band, which indicates a high likelihood of the transaction being high-risk or suspicious. The specific risk of this transaction is the sanctioned corridor violation, where the destination country 'IRN' is on the OFAC/UN sanctions list.\n\nOriginator History:\nThe originator history shows no previous violations, no transactions on record, and no significant transaction volume, indicating a low-risk originator. However, this does not alleviate the high risk associated with the destination country, as sanctions evasion risks are inherent to transactions with such countries.\n\nOverall Risk Assessment:\nBased on the flagging rules and the analysis, I assess this transaction as high-risk due to the sanctioned corridor violation. Given the critical risk band and the potential for sanctions evasion, it is recommended that this transaction be blocked, and a Suspicious Activity Report (SAR) be filed to ensure compliance with anti-money laundering and counter-terrorism financing regulations.",
+  "recommended_action": "BLOCK transaction and FILE SUSPICIOUS ACTIVITY REPORT immediately. Transaction to IRN has triggered mandatory SAR filing requirements. Escalate to Chief Compliance Officer within 1 hour.",
+  "investigated_at": "2026-10-04T13:32:08.337190+00:00"
+}

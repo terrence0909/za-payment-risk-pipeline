@@ -26,8 +26,8 @@ down:
 
 produce:
 	cd src/producer && \
-	pip3 install -r requirements.txt -q && \
-	python3 producer.py
+	source $(PWD)/.venv/bin/activate && pip install -r requirements.txt -q && \
+	source $(PWD)/.venv/bin/activate && python producer.py
 
 logs:
 	$(COMPOSE) logs -f

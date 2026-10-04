@@ -1,0 +1,27 @@
+{
+  "report_id": "FIND-20261004-133314",
+  "transaction_id": "TXN-20261004-61885A94",
+  "risk_band": "HIGH",
+  "risk_score": 57,
+  "requires_sar": false,
+  "violations": [
+    {
+      "rule_id": "INVALID_BOP_CODE",
+      "passed": false,
+      "severity": "HIGH",
+      "score_contribution": 50,
+      "finding": "BOP code '999' not in SARB-approved set. FinSurv submission will be rejected.",
+      "field_ref": "bop_category_code"
+    }
+  ],
+  "originator_history": {
+    "total_transactions": 0,
+    "total_volume": 0.0,
+    "previous_violations": 0,
+    "ada_ytd": 0.0,
+    "ada_utilisation_pct": 0.0
+  },
+  "ai_analysis": "Compliance Analysis Report\n\nTransaction ID: TXN-20261004-61885A94\n\nThe primary risk concern with this transaction is the invalid BOP code '999', which is not in the South African Reserve Bank (SARB)-approved set, potentially indicating a high risk of money laundering or terrorist financing. \n\nThe originator history does not indicate a pattern of concern, with zero transactions on record, no previous violations, and no abnormal Anti-Money Laundering (AML) Activity Detection (ADA) usage. \n\nBased on the provided information, my overall risk assessment is that the transaction is High Risk due to the invalid BOP code, but the originator history mitigates the risk of a high-risk pattern.",
+  "recommended_action": "FLAG for enhanced due diligence. Request source-of-funds documentation from originator before processing. Review within 4 hours.",
+  "investigated_at": "2026-10-04T13:33:14.046514+00:00"
+}

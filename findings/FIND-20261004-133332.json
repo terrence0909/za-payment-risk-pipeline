@@ -1,0 +1,35 @@
+{
+  "report_id": "FIND-20261004-133332",
+  "transaction_id": "TXN-20261004-D5936D3C",
+  "risk_band": "CRITICAL",
+  "risk_score": 100,
+  "requires_sar": true,
+  "violations": [
+    {
+      "rule_id": "INVALID_BOP_CODE",
+      "passed": false,
+      "severity": "HIGH",
+      "score_contribution": 50,
+      "finding": "BOP code 'ABC' not in SARB-approved set. FinSurv submission will be rejected.",
+      "field_ref": "bop_category_code"
+    },
+    {
+      "rule_id": "SANCTIONED_CORRIDOR",
+      "passed": false,
+      "severity": "CRITICAL",
+      "score_contribution": 100,
+      "finding": "Destination 'IRN' is on the OFAC/UN sanctions list. Block transaction and file SAR immediately.",
+      "field_ref": "beneficiary_country"
+    }
+  ],
+  "originator_history": {
+    "total_transactions": 0,
+    "total_volume": 0.0,
+    "previous_violations": 0,
+    "ada_ytd": 0.0,
+    "ada_utilisation_pct": 0.0
+  },
+  "ai_analysis": "Compliance Analysis Report\n\nTransaction ID: TXN-20261004-D5936D3C\n\nThe primary risk concern with this transaction is the critical risk score and SANCTIONED_CORRIDOR violation, which indicates that the destination country (IRN) is on the OFAC/UN sanctions list. This poses a significant reputational and regulatory risk to the bank. The originator history, with no recorded transactions, does not provide sufficient context to indicate a pattern of concern. Based on this analysis, the overall risk assessment is HIGH, as the transaction flag raises significant red flags and requires immediate action to prevent potential exposure to the bank.",
+  "recommended_action": "BLOCK transaction and FILE SUSPICIOUS ACTIVITY REPORT immediately. Transaction to IRN has triggered mandatory SAR filing requirements. Escalate to Chief Compliance Officer within 1 hour.",
+  "investigated_at": "2026-10-04T13:33:32.197490+00:00"
+}

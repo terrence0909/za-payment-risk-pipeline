@@ -1,0 +1,27 @@
+{
+  "report_id": "FIND-20261004-133220",
+  "transaction_id": "TXN-20261004-A82C6D25",
+  "risk_band": "CRITICAL",
+  "risk_score": 100,
+  "requires_sar": true,
+  "violations": [
+    {
+      "rule_id": "ADA_LIMIT_BREACH",
+      "passed": false,
+      "severity": "CRITICAL",
+      "score_contribution": 100,
+      "finding": "ADA breach: cumulative R1,037,260.37 exceeds R1,000,000 annual discretionary allowance.",
+      "field_ref": "ada_ytd_used,amount_zar"
+    }
+  ],
+  "originator_history": {
+    "total_transactions": 0,
+    "total_volume": 0.0,
+    "previous_violations": 0,
+    "ada_ytd": 0.0,
+    "ada_utilisation_pct": 0.0
+  },
+  "ai_analysis": "Compliance Analysis Report\n\nTransaction ID: TXN-20261004-A82C6D25\n\nPrimary Risk Concern:\nThe primary risk concern with this transaction is the critical risk score and ADA limit breach, indicating a high risk of fraud or money laundering. The cumulative R1,037,260.37 exceeds the annual discretionary allowance of R1,000,000, suggesting a potential breach of anti-money laundering regulations.\n\nOriginator History Analysis:\nThe originator's history is clean, with no previous transactions, total volume transacted of R0.00, and no previous violations. The originator's ADA utilisation is also 0.0%, indicating no usage of annual allowance. This suggests that the originator is new to the system, and there is no pattern of concern.\n\nOverall Risk Assessment:\nGiven the critical risk score and ADA limit breach, I classify this transaction as HIGH RISK. The originator's history does not indicate a pattern of concern, but the breach of the annual allowance raises suspicions of potential money laundering activity. Further investigation is required to determine the legitimacy of this transaction.",
+  "recommended_action": "BLOCK transaction and FILE SUSPICIOUS ACTIVITY REPORT immediately. Transaction to ARE has triggered mandatory SAR filing requirements. Escalate to Chief Compliance Officer within 1 hour.",
+  "investigated_at": "2026-10-04T13:32:20.751735+00:00"
+}

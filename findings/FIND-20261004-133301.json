@@ -1,0 +1,35 @@
+{
+  "report_id": "FIND-20261004-133301",
+  "transaction_id": "TXN-20261004-418D4ACD",
+  "risk_band": "CRITICAL",
+  "risk_score": 100,
+  "requires_sar": true,
+  "violations": [
+    {
+      "rule_id": "ADA_LIMIT_BREACH",
+      "passed": false,
+      "severity": "CRITICAL",
+      "score_contribution": 100,
+      "finding": "ADA breach: cumulative R1,129,724.23 exceeds R1,000,000 annual discretionary allowance.",
+      "field_ref": "ada_ytd_used,amount_zar"
+    },
+    {
+      "rule_id": "LARGE_INDIVIDUAL_TRANSFER",
+      "passed": false,
+      "severity": "HIGH",
+      "score_contribution": 50,
+      "finding": "Individual transfer of R598,735.66 exceeds R500,000. Source-of-funds docs required.",
+      "field_ref": "amount_zar,entity_type"
+    }
+  ],
+  "originator_history": {
+    "total_transactions": 0,
+    "total_volume": 0.0,
+    "previous_violations": 0,
+    "ada_ytd": 0.0,
+    "ada_utilisation_pct": 0.0
+  },
+  "ai_analysis": "**Compliance Analysis Report**\n\n**Transaction ID:** TXN-20261004-418D4ACD\n\n**Summary:**\n\nThis transaction is flagged for review due to critical risk score and significant rule violations. The primary risk concern with this transaction is the potential for money laundering, given the critical risk score and breach of the annual discretionary allowance for large individual transfers (LARGE_INDIVIDUAL_TRANSFER). The originator's history suggests a low risk profile, with no previous violations or significant transactions recorded. However, the cumulative ADA breach indicates a potential risk of non-compliance.\n\n**Recommendations:**\n\n* Request source-of-funds documentation to assess the originator's identity and risk profile.\n* Review the originator's historical transactions to determine if this transaction is an isolated incident or part of a larger pattern.\n* Consider further investigation to determine the true nature of this transaction and assess the risk of money laundering or other forms of financial crime.\n\n**Overall Risk Assessment:**\n\nThe overall risk assessment is elevated due to the critical risk score and significant rule violations. While the originator's history is generally low risk, the ADA breach and LARGE_INDIVIDUAL_TRANSFER violation indicate a need for further review and investigation.",
+  "recommended_action": "BLOCK transaction and FILE SUSPICIOUS ACTIVITY REPORT immediately. Transaction to ARE has triggered mandatory SAR filing requirements. Escalate to Chief Compliance Officer within 1 hour.",
+  "investigated_at": "2026-10-04T13:33:01.850705+00:00"
+}
